@@ -1,0 +1,118 @@
+
+Var check_status=""
+Var error=""
+//Defined variable for action get urls and keywords from SQLite
+Var url_csv=""
+Var keyword=""
+Var total_url=0
+Var total_key=0
+Var list_url=""
+Var list_key=""
+Var com_email=""
+Var com_name=""
+Var url_csv_item=""
+
+//Defined variable for action get url in input_main.csv from url sqlite
+Var index_row=1
+Var name_script=""
+
+//Defined variable for action get hrefs and content
+Var web_name=""
+Var url=""
+Var url_web=""
+Var class_href=""
+Var class_title=""
+Var class_date_post=""
+Var class_source=""
+Var class_content=""
+Var click_search=""
+Var class_next_page=""
+Var domain=""
+Var replace_nxt_p=""
+Var case_display=""
+Var class_tr_dl=""
+Var click_sort=""
+Var class_gsc_cursor_page=""
+Var name_script="ana1.tpr"
+
+Var input_file="input_main.xlsx"
+Var out_file="output.xlsx"
+Var sheet_keyword="key_search"
+Var keyword=""
+Var total_keyword=0
+Var total_href=0
+
+Var str_url_item_tmp=""
+Var str_title_item=""
+Var fullPathOutFile=""
+Var path_save=""
+Var path_save_html=""
+Var special_char=""
+Var page_name=""
+Var file_html=""
+Var fullPathHtml=""
+Var number_pages=0
+
+Var count_loop=20
+Eval no_num=0
+Var found=0
+Var numpage=0
+
+Var check_detail=""
+Var url_result_keyword=""
+
+// Open the CSV file
+File "open" file="{_PROJECT_DIR}\input_main.csv" id="id1"
+
+Run "..\src\scripts\ExportDataFromSQLite.java"
+Wait "10s"
+
+Press Windows+r wait=1s
+Type "chrome"
+Press Enter wait=1s
+Press "Windows+UP"
+Wait "0.5s"
+
+Log {total_url}
+
+for (k=1; {k}<{total_url}+1; k={k}+1) {
+    Var url_csv_item={url_csv{k}}
+    Log {url_csv_item}
+    Run "..\src\scripts\GetIndexRow.java"
+    Log {index_row}
+    if({index_row} > 0){
+        // Iterate over the file lines
+        for (line={index_row}; {line}<={index_row}; line={line}+1) {
+            File parse line={line} id="id1"
+            Var web_name={_FILE_PARSE_VALUE1}
+            Var url_web={_FILE_PARSE_VALUE2}
+            Var class_href={_FILE_PARSE_VALUE3}
+            Var class_title={_FILE_PARSE_VALUE4}
+            Var class_date_post={_FILE_PARSE_VALUE5}
+            Var class_source={_FILE_PARSE_VALUE6}
+            Var class_content={_FILE_PARSE_VALUE7}
+            Var click_search={_FILE_PARSE_VALUE8}
+            Var class_next_page={_FILE_PARSE_VALUE9}
+            Var domain={_FILE_PARSE_VALUE10}
+            Var replace_nxt_p={_FILE_PARSE_VALUE11}
+            Var case_display={_FILE_PARSE_VALUE12}
+            Var class_tr_dl={_FILE_PARSE_VALUE13}
+            Var click_sort={_FILE_PARSE_VALUE14}
+            Var class_gsc_cursor_page={_FILE_PARSE_VALUE15}
+        }
+        Log {index_row}
+        Log {name_script}
+        Run "{name_script}"
+    }
+}
+
+Log {check_status}
+Log {error}
+Wait "10s"
+Press "Ctrl+Shift+W"
+
+Excel "close" save="false" id="id1"
+
+Run "..\src\scripts\SendEmail.java"
+
+Log {check_detail}

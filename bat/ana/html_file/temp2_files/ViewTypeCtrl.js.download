@@ -1,0 +1,26 @@
+/* * CMSjp view type control(PC, smartphone and text page).
+ * (C)KADOKAWA CORPORATION 2013
+ * $Id: $
+ */
+
+function chgViewTypePC() {
+	chgViewType('pc');
+}
+
+function chgViewTypeSP() {
+	chgViewType('sp');
+}
+
+function chgViewType(type) {
+	outViewTypeCookie(type);	// Cookie出力
+	location.reload();			// reload
+}
+
+function outViewTypeCookie(type) {
+	var ckName = 'viewtype';
+	var ckEx = new Date(2038, 0, 1, 0, 0, 0);
+	ckEx = ckEx.toGMTString();
+	var ckPath = '/';
+	// cookie出力
+	document.cookie = ckName + '=' + type + ';expires=' + ckEx + ';path=' + ckPath + ';';
+}

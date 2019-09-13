@@ -1,0 +1,160 @@
+Var _SERVER_CLIPBOARD_CONTENT={url_web}
+Press F6
+Press "Ctrl+T"
+Press "Ctrl+V"
+Wait "0.5s"
+Press "Delete"
+Press Enter
+Wait "1s"
+
+String "indexof" {web_name} string="newswitch" var="login1"
+String "indexof" {web_name} string="nikkan" var="login2"
+String "indexof" {web_name} string="gizmodo" var="web_gizmodo"
+String "indexof" {web_name} string="nikkei" var="web_nikkei"
+
+if(({login1} >= 0 || {login2} >= 0) && {boolean_login} == 0){
+    Compareto "{web_name}\login\login.png" method="search2"
+    if ({_EXIT_CODE} == 0) {
+        //Click "image" passrate="50" template="{web_name}\{web_name}{j}.png"
+        Click "image" passrate="50" template="{web_name}\login\login.png"
+        Wait "2s"
+        Click "image" passrate="50" template="{web_name}\login\user.png"
+        Var _SERVER_CLIPBOARD_CONTENT="quoc.nguyen@addix.vn"
+        Press "Ctrl+V"
+        Wait "10s"
+
+        Click "image" passrate="50" template="{web_name}\login\pass.png"
+        Var _SERVER_CLIPBOARD_CONTENT="addix12"
+        Press "Ctrl+V"
+        Wait "1s"
+
+        Click "image" passrate="50" template="{web_name}\login\submit.png"
+        Wait "2s"
+        if({login1} >= 0){
+            Click "image" passrate="50" template="{web_name}\login\home.png"
+        }
+
+        Eval boolean_login=1
+    }
+}
+
+for (i=1; {i}<={total_key}; i={i}+1) {
+    Var number_pages=0
+    Var _SERVER_CLIPBOARD_CONTENT={url_web}
+    Press F6
+    Press "Ctrl+T"
+    Press "Ctrl+V"
+    Wait "0.5s"
+    Press "Delete"
+    Press Enter
+    Wait "15s"
+    
+    for (j=0; {j}<{click_search}; j={j}+1) {
+        Click "image" passrate="75" template="{web_name}\{web_name}{j}.png" wait="500"
+        Wait "5s"
+    }
+    
+    Press "Ctrl+A"
+    Press "Delete"
+    # Read value keyword
+    Var keyword={keyword{i}}
+    Log {keyword}
+    Var _SERVER_CLIPBOARD_CONTENT={keyword}
+    Press "Ctrl+V"
+    Wait "3s"
+    Press "Enter"
+    Wait "5s"
+    
+    for (srt=0; {srt}<{click_sort}; srt={srt}+1) {
+        Click "image" passrate="70" template="{web_name}\sort\{web_name}{srt}.png"
+        Wait "2s"
+    }
+    
+    Var file_html="temp1.html"
+    Run "..\src\scripts\DeleteFileExist.java"
+    
+    if({web_gizmodo} >= 0){
+        Press "PGDOWN" wait="500" count=5
+    }
+    
+    if({web_nikkei} >= 0){
+        Var found=0
+        for (foundii=1; {foundii}<11; foundii={foundii}+1) {
+            Compareto "{web_name}\google_icon.png" passrate="70" method="search2"
+            if ({_EXIT_CODE} > 0) {
+                Press "PGDOWN" wait="500"
+            } else {
+                Compareto "{web_name}\google_icon.png" passrate="70" method="search2"
+                if ({_EXIT_CODE} == 0) {
+                   Click "image" passrate="30" template="{web_name}\google_icon.png"
+                   Wait "5s"
+                   Var found=1
+                   Break
+                }
+            }
+        }
+    }
+    
+    Wait "5s"
+    Run "savepagesource.tpr"
+    
+    for (i0=0; {i0} <= 1000;i0={i0}+1) {
+        Compareto "completed.png" passrate="70" method="search2"
+        if ({_EXIT_CODE} > 0) {
+            Wait 1s
+        }else{
+            Click "image" passrate="75" template="close_completed.PNG"
+            break
+        }
+    }
+    
+    Run "..\src\scripts\GetNumberPage.java"
+    Log {number_pages}
+    
+    if({number_pages} > 1){
+        for (k=2; {k}<3; k={k}+1) {
+            Var found=0
+            for (foundii=1; {foundii}<11; foundii={foundii}+1) {
+                Var link="{web_name}\click_page\click{k}.png"
+                Log {link}
+                Compareto "{web_name}\click_page\google_icon.png" passrate="70" method="search2"
+                if ({_EXIT_CODE} > 0) {
+                    Press "PGDOWN" wait="500"
+                } else {
+                    Compareto "{link}" passrate="70" method="search2"
+                    if ({_EXIT_CODE} == 0) {
+                       Click "image" passrate="70" template="{link}"
+                       Wait "5s"
+                       Var found=1
+                       break
+                    }
+                }
+            }
+            if({found} == 1){
+                Log {k}
+                Wait "5s"
+                Var file_html="temp{k}.html"
+                Run "..\src\scripts\GetPathHTML.java"
+                Log {fullPathHtml}
+
+                Log {file_html}
+                Run "savepagesource.tpr"
+                for (i2=0; {i2} <= 1000;i2={i2}+1) {
+                    Compareto "completed.png" passrate="70" method="search2"
+                    if ({_EXIT_CODE} > 0) {
+                        Wait 1s
+                    }else{
+                        Click "image" passrate="75" template="close_completed.PNG"
+                        break
+                    }
+                }
+            }
+        }
+    }
+    
+    Run "..\src\scripts\GetHrefsTop20.java"   
+
+    Press "Ctrl+W"
+    
+}
+Press "Ctrl+W"

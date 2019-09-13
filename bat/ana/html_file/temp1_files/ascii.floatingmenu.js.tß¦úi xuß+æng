@@ -1,0 +1,18 @@
+(function($) {
+    $.fn.flatingMenu = function() {
+        var elements = this;
+        elements.each(function() {
+
+            $(window).on({
+                'scroll touchmove': function() {
+                    if (elements.hasClass('showing')) {
+                        elements.stop();
+                        elements.css('display', 'none').delay(200).fadeIn(400);
+                    }
+                }
+            });
+
+        });
+        return this;
+    };
+})(jQuery);

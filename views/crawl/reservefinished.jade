@@ -1,0 +1,21 @@
+extends ../../views/layout
+
+block content
+	div.container
+		div.row.col-4#header
+			img(src="images/addixcs.jpg")
+		div(style="height: 5px;")
+
+		div.row#body
+			div.myDivBackgroundGray
+				span.mySpan Thank you for your reservation.
+			div(style="height: 5px;")
+			div.myDivCustom.myDivBorder(style="height: 300px")
+				span.mySpan Now we're extracting data.<br>
+					If finished, we'll contact you by e-mail.<br>
+					Please wait a while until our delivery will be finished.<br>
+			div(style="height: 5px;")
+			div.myDivCustom
+				a
+					input(type="button" id="btn-back-top" name="back" value="back to the TOP" class="btn btn-outline-secondary custom-btn")
+		div(style="height: 5px;")

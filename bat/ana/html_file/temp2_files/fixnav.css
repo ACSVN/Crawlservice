@@ -1,0 +1,75 @@
+.fixnav {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 65px; }
+  .fixnav .fixnav_list li {
+    margin-bottom: 5px !important; }
+    .fixnav .fixnav_list li:last-child {
+      margin-bottom: 0; }
+  .fixnav .fixnav_item-mypage a,
+  .fixnav .fixnav_item-mypage span,
+  .fixnav .fixnav_item-fav a,
+  .fixnav .fixnav_item-fav span {
+    display: block;
+    border-radius: 5px 0 0 5px !important;
+    -webkit-border-radius: 5px 0 0 5px !important;
+    -moz-border-radius: 5px 0 0 5px !important;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-align: center; }
+    .fixnav .fixnav_item-mypage a:hover,
+    .fixnav .fixnav_item-mypage span:hover,
+    .fixnav .fixnav_item-fav a:hover,
+    .fixnav .fixnav_item-fav span:hover {
+      text-decoration: none;
+      opacity: 0.8;
+      filter: alpha(opacity=0.8);
+      -ms-filter: "alpha( opacity=$alpha )"; }
+  .fixnav .fixnav_item-mypage a,
+  .fixnav .fixnav_item-mypage span {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff !important;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff; }
+  .fixnav .fixnav_item-fav a,
+  .fixnav .fixnav_item-fav span {
+    background-color: rgba(219, 193, 0, 0.8);
+    color: #000 !important;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff; }
+  .fixnav .fixnav_ico-fav {
+    background: url("/img/asclub/pc_common_img/ic_fav.png") no-repeat left center;
+    -webkit-background-size: 20px 20px;
+    -o-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto 4px; }
+  .fixnav .fixnav_ico-personal {
+    background: url("/img/asclub/pc_common_img/ic_person_outline.png") no-repeat left center;
+    -webkit-background-size: 20px 20px;
+    -o-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto 4px; }
+  @media only screen and (max-width: 767px) {
+    .fixnav {
+      bottom: 60px; }
+      .fixnav .fixnav_list li {
+        margin-bottom: 0px !important; }
+      .fixnav .fixnav_item-mypage a,
+      .fixnav .fixnav_item-mypage span,
+      .fixnav .fixnav_item-fav a,
+      .fixnav .fixnav_item-fav span {
+        padding: 5px 5px;
+        font-size: 10px;
+        font-size: 1.0rem; }
+      .fixnav .fixnav_ico-fav {
+        margin: 0 auto 0px; }
+      .fixnav .fixnav_ico-personal {
+        margin: 0 auto 0px; } }

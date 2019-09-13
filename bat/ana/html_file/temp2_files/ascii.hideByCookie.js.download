@@ -1,0 +1,60 @@
+/**
+ * 特定の文字列から始まる文字列が、指定したクッキーにあれば要素を削除
+ *
+ * @author: Masahiro NAKASHIMA (FlipClap Inc, m.nakashima@flipclap.co.jp)
+ * @version: 0.1.1
+ */
+;
+(function($) {
+    $.fn.hideByCookie = function(opts) {
+        var elements = this;
+
+        // 渡されたオプションとデフォルトをマージする
+        var options = $.extend({}, $.fn.hideByCookie.defaults, opts);
+
+        elements.each(function() {
+            // クッキーを取得
+            var uidCookie = getCookie(options.name);
+
+            if (uidCookie != null && uidCookie.indexOf(options.match) == 0) {
+                //文字列があれば削除
+                if (options.hide == true) {
+                    $(this).removeClass('showing').addClass('hiding').hide();
+                } else {
+                    $(this).removeClass('hiding').addClass('showing').show();
+                }
+
+            }
+        });
+        return this;
+    };
+
+    function getCookie(name) {
+        var result = null;
+
+        var cookieName = name + '=';
+        var allcookies = document.cookie;
+
+        var position = allcookies.indexOf(cookieName);
+        if (position != -1) {
+            var startIndex = position + cookieName.length;
+
+            var endIndex = allcookies.indexOf(';', startIndex);
+            if (endIndex == -1) {
+                endIndex = allcookies.length;
+            }
+
+            result = decodeURIComponent(
+                allcookies.substring(startIndex, endIndex));
+        }
+
+        return result;
+    }
+
+    // デフォルトオプション
+    $.fn.hideByCookie.defaults = {
+        hide: true,
+        name: '_ida_uid',
+        match: 'ida_'
+    };
+})(jQuery);

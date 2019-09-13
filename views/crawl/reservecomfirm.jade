@@ -1,0 +1,60 @@
+extends ../../views/layout
+
+block content
+	nav.navbar.navbar-expand-md.navbar-dark
+		a.navbar-brand
+			img.rnn-header__logo(src="images/addixcs.jpg" alt="" width="200" height="100" style="margin-left: 510px;")
+	p.lead(style="text-align: center;") Please check the contents.
+	form.form-inlin.justify-content-center
+		div.container
+			div
+				div
+					ul.list-group.mb-3
+						li.list-group-item.d-flex.justify-content-between.lh-condensed
+							div.text-muted
+								h6.my-0 Payment amount
+							span.text-muted $12
+						li.list-group-item.d-flex.justify-content-between.lh-condensed
+							div.text-muted
+								h6.my-0 Date of delivery
+							span.text-muted 2019/09/09
+						li.list-group-item.d-flex.justify-content-between.lh-condensed
+							div.text-muted
+								h6.my-0 Target Url
+							span.text-muted https://vietnam.co.jp/
+						li.list-group-item.d-flex.justify-content-between.lh-condensed
+							div.text-muted
+								h6.my-0 Key Word
+							span.text-muted IoT
+						li.list-group-item.d-flex.justify-content-between
+							span Total (USD)
+							strong#id-money $20
+						input#typepay(type="hidden" value="#{pay}")
+					div.card
+						div.card-header
+							strong Customer infomation
+						div.card-body
+							div.row.mb-4
+								div.col-sm-6
+									div
+										strong Company name :
+										strong Addix C&amp;S
+									div Email: info@webz.com.pl
+									div Name: Maria mike
+									div Address: 71-101 Tokyo, Japan
+									div Phone: +81  666 3333
+					div.card
+						div.card-header
+							strong Payment method
+						div(style="height: 100px")
+				hr.mb-4
+				div.d-flex
+					ul.list-inline.mx-auto.justify-content-center
+						li.list-inline-item
+							a
+								input(class="btn btn-secondary" id="back-infor" type="button" value="Back" name="Back" style="margin-right: 100px")
+						li.list-inline-item
+							a
+								input(class="btn btn-secondary" id="btn-confirm-finish" type="button" value="Confirm" name="Confirm")
+	footer.my-5.pt-5.text-muted.text-center.text-small
+		p.mb-1 &copy; 2019-2020 Addix C&S 

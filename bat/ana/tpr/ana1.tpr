@@ -1,0 +1,94 @@
+
+Var _SERVER_CLIPBOARD_CONTENT={url_web}
+Press F6
+Press "Ctrl+T"
+Press "Ctrl+V"
+Wait "1s"
+Press "Delete"
+Press Enter
+Wait "2s"
+String "indexof" {web_name} string="gigazine" var="web_exist"
+String "indexof" {web_name} string="roboteer" var="roboteer_exist"
+String "indexof" {web_name} string="newswitch" var="login"
+if({login} >= 0){
+    Click "image" passrate="50" template="{web_name}\login\login.png"
+    Wait "10s"
+    Click "image" passrate="50" template="{web_name}\login\user.png"
+    Var _SERVER_CLIPBOARD_CONTENT="quoc.nguyen@addix.vn"
+    Press "Ctrl+V"
+    Wait "5s"
+
+    Click "image" passrate="50" template="{web_name}\login\pass.png"
+    Var _SERVER_CLIPBOARD_CONTENT="addix12"
+    Press "Ctrl+V"
+    Wait "5s"
+
+    Click "image" passrate="50" template="{web_name}\login\submit.png"
+    Wait "10s"
+
+    Click "image" passrate="50" template="{web_name}\login\home.png"
+}
+
+if({web_exist} >= 0){
+    Click "image" passrate="50" template="gigazine\home"
+}
+
+Run "..\src\scripts\OutputFileCreate.java"
+Wait "5s"
+
+for (i=1; {i}<={total_key}; i={i}+1) {
+    Var _SERVER_CLIPBOARD_CONTENT={url_web}
+    Press F6
+    Press "Ctrl+T"
+    Press "Ctrl+V"
+    Wait "1s"
+    Press "Delete"
+    Press Enter
+    Wait "10s"
+    Log {web_name}
+    for (j=0; {j}<{click_search}; j={j}+1) {
+        if ({web_exist} >= 0 || {roboteer_exist} >= 0) {
+            Var found=0
+            for (foundi=1; {foundi}<11; foundi={foundi}+1) {
+                Compareto "{web_name}\{web_name}{j}.png" passrate="75" method="search2"
+
+                if ({_EXIT_CODE} > 0) {
+                    Press "PGDOWN" wait="500"
+                } else {
+                    Click "image" passrate="50" template="{web_name}\{web_name}{j}.png" wait="500"
+                    Wait "5s"
+                    Var found=1
+                    Break
+                }
+            }
+        }else{
+            Click "image" passrate="50" template="{web_name}\{web_name}{j}.png" wait="500"
+            Wait "5s"
+        }
+    }
+    Press "Ctrl+A"
+    Press "Delete"
+    # Read value keyword
+    Var keyword={keyword{i}}
+    Log {keyword}
+    Var _SERVER_CLIPBOARD_CONTENT={keyword}
+    Press "Ctrl+V"
+    Wait "3s"
+    Press "Enter"
+    Wait "5s"
+  
+    for (srt=0; {srt}<{click_sort}; srt={srt}+1) {
+        Click "image" passrate="50" template="{web_name}\sort\{web_name}{srt}.png"
+        Wait "1s"
+    }
+    if({web_exist} >= 0){
+        Wait "10s"
+    }
+    Press F6
+    Press "Ctrl+C"
+    Var url_result_keyword={_SERVER_CLIPBOARD_CONTENT_TEXT}
+    Run "..\src\scripts\GetHrefsTop20.java"   
+
+    Press "Ctrl+W"
+}
+Press "Ctrl+W"

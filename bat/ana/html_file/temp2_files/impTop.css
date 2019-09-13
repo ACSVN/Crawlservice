@@ -1,0 +1,270 @@
+@charset "utf-8";
+/*--------------------------------------------------
+    	 CSS for Import to Index of ASCII.jp
+                        Last Modified 2018.1.10
+                        http://ascii.jp/
+			File Name:impTop.css
+--------------------------------------------------*/
+
+/* import files ------------------------*/
+@import "jpGeneral.css?201801101715";
+
+/* Add ---------------------------------*/
+
+/* Daily Topics */
+#jpWrap #mainC .mustLst {
+	margin: 10px 0;
+}
+#jpWrap #mainC .mustLst .catName {
+	padding:0 5px 0 7px;
+	background:transparent url(/img/0910/bg_subcatheading.gif) repeat-x left top;
+	height:22px;
+}
+#jpWrap #mainC .mustLst #It,
+#jpWrap #mainC .mustLst #Biz {
+	border-top: 1px solid #6D8318;
+	border-left:5px solid #6D8318;
+	border-right:1px solid #AAAAAA;
+}
+#jpWrap #mainC .mustLst #Digital {
+	border-top: 1px solid #333;
+	border-left:5px solid #333;
+	border-right:1px solid #AAAAAA;
+}
+#jpWrap #mainC .mustLst #Web {
+	border-top: 1px solid #999;
+	border-left:5px solid #999;
+	border-right:1px solid #AAAAAA;
+}
+#jpWrap #mainC .mustLst #Hobby,
+#jpWrap #mainC .mustLst #Pc {
+	border-top: 1px solid #D5AA00;
+	border-left:5px solid #D5AA00;
+	border-right:1px solid #AAAAAA;
+}
+#jpWrap #mainC .mustLst #Mac {
+	border-top: 1px solid #6f0004;
+	border-left:5px solid #6f0004;
+	border-right:1px solid #AAAAAA;
+}
+#jpWrap #mainC .mustLst .catName h3 {
+	padding: 3px 0;
+	float: left;
+	font-size: 108%;
+	font-weight: bold;
+}
+#jpWrap #mainC .mustLst ul {
+	margin: 0;
+	padding: 10px 5px 5px;
+}
+#jpWrap #mainC .mustLst li {
+	margin: 0 0 5px;
+	padding: 0 0 0 12px;
+	background: transparent url(/img/0910/icon_articlelist.gif) no-repeat scroll 0 7px;
+}
+/* Infomation */
+#jpInfo #jpWrap #adL,
+#jpInfo #jpWrap .adRect {
+	display: none;
+}
+#jpInfo #jpWrap #mainC {
+	margin: 0 auto;
+	padding: 0 0 50px;
+	float: none;
+	width: 728px;
+}
+#jpInfo #jpWrap #mainC h2 {
+	height: 28px;
+	text-indent: -9999px;
+}
+#jpInfo #jpWrap #mainC h2.policytitle {
+	background: transparent url(/img/bg_policytitle.gif) no-repeat left top;
+}
+#jpInfo #jpWrap #mainC h2.errortitle {
+	background: transparent url(/img/bg_errortitle.gif) no-repeat left top;
+}
+#jpInfo #jpWrap #mainC h2.rsstitle {
+	background: transparent url(/img/bg_rsstitle.gif) no-repeat left top;
+}
+#jpInfo #jpWrap #mainC .content {
+	width: 680px;
+	margin: 15px auto 20px;
+}
+#jpInfo #jpWrap #mainC h3 {
+	margin: .5em 0 0.75em;
+	font-weight: bold;
+}
+#jpInfo #jpWrap #mainC .content p {
+	margin: 1em 0 1.5em;
+	line-height: 1.4;
+	font-size: 108%;
+}
+#jpInfo #jpWrap #mainC .content dl {
+	margin: 1em 0;
+	font-size: 108%;
+}
+#jpInfo #jpWrap #mainC .content dt {
+	font-weight: bold;
+	text-indent: 1em;
+}
+#jpInfo #jpWrap #mainC .content dd {
+	padding-left: 1.5em;
+}
+#jpInfo #jpWrap #mainC .content ul {
+	margin: 1em .5em 1em .5em;
+	padding: 0 0 0 1em;
+	list-style-type: disc;
+}
+#jpInfo #jpWrap #mainC .content .nmk {
+	padding: 0;
+	border-top: 1px solid #ccc;
+	list-style-type: none;
+}
+#jpInfo #jpWrap #mainC .content li {
+	padding: 2px;
+}
+#jpInfo #jpWrap #mainC .content .nmk li {
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+}
+#jpInfo #jpWrap #mainC .content li.stp {
+	background-color: #f3f3f3;
+}
+#jpInfo #jpWrap #mainC .content li h3 {
+	margin: 0;
+	float: left;
+	width: 120px;
+	font-size: 108%;
+}
+#jpInfo #jpWrap #mainC .content li p {
+	margin: 0;
+	float: left;
+	width: 490px;
+	font-size: 100%;
+}
+#jpInfo #jpWrap #mainC .content li p.ico {
+	width: 35px;
+}
+#jpInfo #jpWrap #mainC .content li p.ico a img {
+	border: none;
+}
+/* Search Result */
+#jpInfo #jpWrap #mainC #form {
+	margin: 10px auto 10px;
+	text-align: center;
+}
+#jpInfo #jpWrap #mainC #form input.serchform {
+	padding: 1px;
+	width: 450px;
+}
+#jpInfo #jpWrap #mainC #result div[id^="results_"] iframe {
+	height: 2300px;
+}
+
+/* TECH 20110124 */
+#sideL .sideelem {
+	margin: 0 0 10px;
+	padding: 1px;
+	background: transparent url(/img/0910/bg_sidelelem_cloud.gif) no-repeat left bottom;
+}
+#sideL .sideelem h4 {
+	padding: 5px 5px 3px;
+	background: #ccc url(/img/0910/bg_sidelelem_h4_cloud.gif) no-repeat left top;
+	color: #000;
+	height: 15px;
+	font-size: 93%;
+	font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",Meiryo,"メイリオ","ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+#sideL .sideelem .alcenter {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 82px;
+}
+#sideL .sideelem .alcenter a {
+	display: block;
+	width: 82px;
+	border: 1px solid #aaa;
+}
+#sideL .sideelem .alcenter a:hover {
+	border-color: #0099ff;
+}
+#sideL .sideelem .alcenter a img {
+	margin: 1px;
+}
+#sideL .sideelem ul {
+	margin: 5px 0 0;
+}
+#sideL .sideelem li {
+	margin: 0 0 7px;
+	padding: 0 2px 10px 0;
+	background: transparent url(/img/0910/border_sidelelem_cloud.gif) no-repeat center bottom;
+}
+#sideL .sideelem li h3 {
+	margin: 0 2px 3px 0;
+	background: transparent url(/img/0910/icon_articlelist_cloud.gif) no-repeat left 1px;
+	font-size: 93%;
+}
+/* ASCII CLOUD */
+#cloud2 #jpWrap #sideR .bm0 {
+	margin-bottom: 0;
+}
+#cloud2 #jpWrap #sideR .tp0 {
+	margin-top: 0;
+}
+#cloud2 #sideR #magMain p {
+	margin: 5px auto;
+	float: none;
+	text-align: center;
+}
+#cloud2 #sideR #magMain li {
+	padding: 3px;
+	border-top: 1px dotted #aaa;
+}
+
+/* side cloudSample*/
+
+#sideL .cloudSample{
+	margin: 0 auto 10px auto;
+	border: 1px solid #d0101b;
+	font-family: Meiryo,"メイリオ";
+	overflow: hidden; _zoom: 1; 
+	}
+
+
+#sideL .cloudSample h4{
+	background-color: #d0101b;
+	text-align: center;
+	padding: 10px 0;
+	}
+
+#sideL .cloudSample p{
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	overflow: hidden; _zoom: 1;
+	font-size: 16px;
+	padding: 10px 0 ;
+	}
+
+#sideL .cloudSample p a{
+	display:block;
+	padding: 5px 0;
+	margin: 5px;
+	background: #f0f0f0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	}
+
+
+
+
+
+
+
+/* NEC Direct*/
+#nec #jpWrap #mainC			{	width: 728px;}
+#nec #mainC .archives h3	{	border-bottom: 3px solid #0b3d91;}
+#nec #mainC .archives h4	{	border-top: 1px solid #0b3d91;}

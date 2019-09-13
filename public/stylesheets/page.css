@@ -1,0 +1,427 @@
+#table-confirm > th, td {
+	text-align: center;
+}
+
+td > input {
+	width: 80%;
+}
+
+.panel #paymentFrm p.btn-success, .panel #chargeFrm p.btn-success {
+  margin-top: 20px;
+}
+
+#intro .btn-get-started:hover #btn_common{
+  color: #1dc8cd;
+}
+
+#intro .btn-get-started:hover{
+    cursor: pointer;
+}
+
+#introduction{
+    max-width: none;
+    padding: 0 0;
+    background: #eff5f5;
+}
+
+#introduction> .wrap{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+#introduction .wrap .section-header{
+    width: 100%; 
+    padding-top: 50px;
+}
+
+#introduction .block{
+    /*max-width: 33.33%;*/
+    max-width: 380px;
+    margin: 0 auto;
+    /*padding: 0 40px;*/
+    /*text-align: justify;    */
+}
+
+#introduction table{
+    border: 2px solid #449d44;
+    min-height: 400px;
+    
+}
+
+#introduction .block tr>* {
+    padding: 5px 15px;
+    vertical-align: middle;
+}
+
+#introduction .block tbody{
+    border: 1px solid #449d44;
+    border-radius: 20px;
+}
+
+#introduction .block tr th {
+    background-color:#449d44; 
+    text-align:center; 
+    font-size:2.5em; 
+    vertical-align: middle;
+}
+
+#introduction .block tr th span{
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#introduction .block ul {
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
+#introduction .block li {
+    /*display: block;
+    padding: 0 0 1em;
+    text-indent: -1em;*/
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#introduction .block p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+#introduction .block .row p {
+    width: 100%;
+    padding: 5px;
+}
+
+#introduction .block .btn-view-sample {
+    width: 92%;
+    background-color: #449d44;
+    display: inline-block;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    max-width: 40%;
+    margin: 5px 0 5px 0;
+    padding: 15px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+#introduction .banner {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 40px;
+    text-align: center;
+}
+
+#introduction .banner a {
+    background: #449d44;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 0 40px 0;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 2.0em;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.plan-card {
+    margin: 0 -8px;
+    font-size: 0;
+    text-align: center;
+    padding: 0px;
+}
+
+.plan-card > li {
+    padding: 0 8px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.3rem;
+    width: 33.333%;
+}
+
+.plan-card-box {
+    border-radius: 6px;
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+#planFree .plan-card-header {
+    background-color: #8FB1B2;
+}
+
+.plan-card-header {
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+}
+
+.plan-card-header p{
+    margin: 0px;
+}
+
+#planSilver .plan-card-header {
+    background-color: #A3A3A3;
+}
+.plan-card-header {
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+}
+
+#planGold .plan-card-header {
+    background-color: #DBA338;
+}
+.plan-card-header {
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+}
+
+.plan-card-price {
+    padding: 30px 0 10px;
+}
+
+.plan-card-price-raw {
+    text-align: center;
+}
+
+.line-through-wrapper {
+    display: inline-block;
+    /*width: 200px;*/
+    width: 90%;
+    text-decoration: line-through;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    position: relative;
+    color: #a3a3a3;
+}
+
+.plan-card-price-text {
+    color: #888888;
+    font-size: 50px;
+    font-family: 'Roboto';
+    letter-spacing: -0.05em;
+    opacity: 0;
+}
+
+.plan-card-price-text small {
+    margin-right: 4px;
+}
+
+.plan-card-price-text .text-period {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-left: 7px;
+}
+
+.plan-card-price-yearly {
+    color: #9b9b9b;
+}
+
+.plan-card-price-button {
+    margin-top: 10px;
+}
+
+.btn-cv-small {
+    display: inline-block;
+    width: 188px;
+    height: 48px;
+    font-size: 1.4rem;
+    line-height: 48px;
+    border-radius: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #24C260;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.palan-current .trial_txt.plan-alert {
+    font-size: 10px;
+    color: #ff0000;
+}
+.palan-current .trial_txt {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    color: #158BFF;
+}
+
+.panel-default {
+    border-color: #ddd;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+#paymentFrm .form-group, #chargeFrm .form-group {
+    margin-bottom: 15px;
+}
+
+#paymentFrm label, #chargeFrm label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#paymentFrm .row, #chargeFrm .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#paymentFrm .div-left, #chargeFrm .div-left{
+    width: 60%;
+    display: inline-block;
+}
+
+#paymentFrm .div-right, #chargeFrm .div-right{
+    width: 40%;
+}
+
+#paymentFrm .form-control, #chargeFrm .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.div-left .expity{
+    width: 50%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.div-left .amount-price {
+    padding-right: 10%;
+}
+
+#paymentFrm .form-control.amount, #paymentFrm .form-control.currency{
+    background-color: #F2DEDE;
+    border: #F2DEDE
+    color: #fff;
+    font-size: 16px;
+}
+
+#chargeFrm .form-control.amount, #chargeFrm .form-control.currency{
+    background-color: #F2DEDE;
+    border: #F2DEDE
+    color: #fff;
+    font-size: 16px;
+}
+
+#stripe{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#paymentFrm .card-type, #chargeFrm .card-type{
+    font-size: 8px;
+    color: red;
+    padding-left: 5px;
+}
+
+#tbl-payment, #tbl-card {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tbl-payment td, #tbl-card td {
+    border: 1px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+}
+
+#tbl-payment th, #tbl-card th {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid grey;
+    background-color: #4CAF50;
+}
+
+#tbl-payment .money, #tbl-card .money{
+    text-align: right;
+}
+
+#tbl-payment .actived, #tbl-card .actived{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.txt-special-price{
+    color: red;
+    font-size: 20px;
+}
+
+.txt-special-text{
+    color: red;
+    font-weight: bold;
+}
+
+.block-title-plan{
+    height: 20px;
+}

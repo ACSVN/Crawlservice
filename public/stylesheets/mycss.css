@@ -1,0 +1,37 @@
+.myDivCustom {
+  display: table;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+.myDivBackgroundGray{
+	display: table;
+	background: #efefef;
+	height: 30px;
+ 	width: 100%;
+	text-align: center;
+}
+.myDivBorder{
+	border: 2px;
+	border-style: solid;
+	border-color: #efefef;
+}
+.mySpan {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-outline-secondary.custom-btn {
+	background-color: #efefef;
+	border-color: #efefef;
+}
+.myFooter{
+	position: absolute;
+	right: 0;	
+	left: 0;
+	bottom: 0;
+	padding: 1rem;
+	/*background-color: #efefef;*/
+	text-align: center;
+}

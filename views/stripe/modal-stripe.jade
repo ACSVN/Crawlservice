@@ -1,0 +1,65 @@
+style(type='text/css').
+	.modal-dialog {
+		max-width: 30%; /* or whatever width you like */
+	}
+	.modal{
+		overflow-y: auto;
+	}
+
+script(type="text/javascript" src="https://js.stripe.com/v2/")
+div
+	div.row
+		div.col-md-2
+		div.col-md-8
+			div.fade.in.modal#stripe(type='')
+				div.modal-dialog
+					div.modal-content
+						div.modal-header
+							h4.modal-title(style="text-align: center;") Payment Infomation
+							button.close(type="button" id="btn-header-close" data-dismiss="modal" aria-hidden="true") x
+						div.modal-body(style="text-align: left;")
+							div.panel.panel-default#payment-info(style="display: block;")
+								div.panel-body
+									form#paymentFrm(action="/finish" method="POST" _lpchecked="1")
+										div.form-group
+											label NAME
+											input.form-control.name(type="text" name="name" placeholder="Enter name" required="" autofocus="" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;")
+										div.form-group
+											label EMAIL
+											input.form-control.email(type="email" name="email" placeholder="Enter email" required="")
+										
+										div.row.payment-plans-info
+											div.div-left
+												div.form-group
+													label AMOUNT
+													div.amount-price
+														input.form-control.amount(type="number" id="id-amount" name="amount" disabled="true")
+														input.form-control.amount(type="hidden"  id="id-amount-h" name="amount" value="")
+											div.div-right.pull-right
+												div.form-group
+													label CURRENCY
+													input.form-control.currency(type="currency" name="currency" value="usd" disabled="true")
+													//- input.form-control.currency(type="hidden" name="currency" value="usd")
+										div.form-group
+											label CARD NUMBER
+											span.card-type (Visa, MasterCard, American Express)
+											input.form-control.card-number(type="text" name="card_num" placeholder="Valid card number" required="" value="4242424242424242")
+										div.row
+											div.div-left
+												div.form-group
+													div.row
+														label EXPIRY DATE
+													div.expity
+														input.form-control.card-expiry-month(type="text" name="exp_month" placeholder="MM" required="" value="12")
+													div.expity
+														input.form-control.card-expiry-year(type="text" name="exp_year" placeholder="YY" required="" value="2020")
+											div.div-right.pull-right
+												div.form-group
+													label CVC CODE
+													input.form-control.card-cvc(type="text" name="cvc" placeholder="CVC" required="" value="242")
+										input#payBtn(type="submit" class="btn btn-success btn-lg btn-block" value="Submit Payment")
+										input(type="hidden" name="update-payment-flg" value="")
+							div.panel.panel-default#payment-status(style="display: none;")
+								div.panel-body
+									p.payment-status
+		div.col-md-2

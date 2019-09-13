@@ -1,0 +1,75 @@
+extends ../../views/layout
+
+block content
+	nav.navbar.navbar-expand-md.navbar-dark
+		a.navbar-brand
+			img.rnn-header__logo(src="images/addixcs.jpg" alt="" width="200" height="100" style="margin-left: 510px;")
+	p.lead(style="text-align: center;") Please enter the information and select the payment method.
+
+	form.form-inlin.justify-content-center
+		div.container
+			div.row
+				div.order-md-1(style="width: 100%;")
+					form.needs-validation#payment
+						div.mb-3
+							label(for="firstName") Company Name
+							input(type="text" class="form-control" id="firstName" placeholder="" value="")
+							div.invalid-feedback Valid first name is required.
+
+						div.mb-3
+							label(for="email") Email
+							input(type="email" class="form-control" id="email" placeholder="you@example.com")
+							div.invalid-feedback Please enter a valid email address for shipping updates.
+						div.mb-3
+							label(for="username") Username
+							div.input-group
+								input(type="text" class="form-control" id="username" placeholder="Username")
+								div.invalid-feedback(style="width: 100%;") Your username is required.
+						div.mb-3
+							label(for="address2") Phone number
+							input(type="text" class="form-control" id="address2" placeholder="+81 22-226-8077")
+						div.mb-3
+							label(for="address") Address
+							input(type="text" class="form-control" id="address" placeholder="〒980-0021 Miyagi, Sendai, Aoba Ward, Central, ７ 4-7-17 ベルザ仙台404")
+							div.invalid-feedback Please enter your shipping address.
+
+							input#inforcrawl(type="hidden" value="#{infor}")
+						hr.mb-4
+						hr.mb-4
+						hr.mb-3 
+						label Payment
+						div.d-block.my-3
+							div.custom-control.custom-radio
+								input(id="chk_transfer" name="paymentMethod" type="radio" class="custom-control-input" value="Bank transfer" checked="")
+								label.custom-control-label(for="chk_transfer") Bank transfer
+							div.custom-control.custom-radio
+								input(id="chk_invoice" name="paymentMethod" type="radio" class="custom-control-input" value="Invoice")
+								label.custom-control-label(for="chk_invoice") Invoice
+							div.custom-control.custom-radio
+								input(id="chk_stripe" name="paymentMethod" type="radio" class="custom-control-input" value="Stripe")
+								label.custom-control-label(for="chk_stripe") Stripe
+						div.row#dv_transfer
+							div.col-md-6.mb-3
+								label(for="cc-name") Account holder
+								input(type="text" class="form-control" id="cc-name" placeholder="")
+							div.col-md-6.mb-3
+								label(for="cc-number") Bank code
+								input(type="text" class="form-control" id="cc-number" placeholder="")
+							div.col-md-6.mb-3
+								label(for="cc-name") Branch code
+								input(type="text" class="form-control" id="cc-name" placeholder="")
+							div.col-md-6.mb-3
+								label(for="cc-number") Account
+								input(type="text" class="form-control" id="cc-number" placeholder="")
+						hr.mb-4
+						div.d-flex
+							ul.list-inline.mx-auto.justify-content-center
+								li.list-inline-item
+									a
+										input(class="btn btn-secondary" id="btn-back-reserve" type="button" value="Back" name="Back" style="margin-right: 100px")
+								li.list-inline-item
+									a
+										input(class="btn btn-secondary" id="btn-next-confirm" type="button" value="Confirm" name="Confirm")
+
+	footer.my-5.pt-5.text-muted.text-center.text-small
+		p.mb-1 &copy; 2019-2020 Addix C&S 

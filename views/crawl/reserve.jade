@@ -1,0 +1,148 @@
+extends ../../views/layout
+
+block content
+	div
+		div.row
+			div.col-md-2
+			div.col-md-8
+				div.row
+					div.col-4
+						img(src="images/addixcs.jpg")
+
+					div.col-8.align-text-bottom(style="padding-top: 80px;")
+						h1 Explanation of the service
+				div.row(style="background-color: #c5bebe;")
+					div.col-8(style="color: #aba6a6; text-align: center;")
+						h1 Main Visual
+					div.col-4
+						ul.list-group
+							li.list-group-item(style="padding: 5px;")
+								input(type="text" id="targetURL1" name="targetURL1" style="width: 100%; text-align: center;" placeholder="targetURL 1")
+							li.list-group-item(style="padding: 5px;")
+								input(type="text" id="targetURL2" name="targetURL2" style="width: 100%; text-align: center;" placeholder="targetURL 2")
+							li.list-group-item(style="padding: 5px;")
+								input(type="text" id="keyword1" name="keyword1" style="width: 100%; text-align: center;" placeholder="keyword 1")
+							li.list-group-item(style="padding: 5px;")
+								input(type="text" id="keyword2" name="keyword2" style="width: 100%; text-align: center;" placeholder="keyword 2")
+							li.list-group-item(style="text-align: center;")
+								button#btnConfirm.btn.btn-primary(style="width: 60%;") Confirm
+			div.col-md-2
+		div.clearfix
+		div#content.row(style="padding-top: 20px; padding-bottom: 20px; display: none;")
+			div.col-md-2
+			div.col-md-8
+				div.row(style="border: 1px solid #d6d1d1;")
+					table#table-confirm(style="width: 100%; font-size: 12px; padding-top: 10px;     margin-top: 10px; margin-bottom: 20px;")
+						thead
+							tr
+								th(colspan="1" style="width: 12.5%; text-align: center;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") Month
+								th(colspan="1" style="width: 12.5%; text-align: center;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px; background-color: #d6d1d1;") (prev)
+								th(colspan="1" style="width: 12.5%; text-align: center;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px; background-color: #d6d1d1;") (next)
+								th(colspan="5" style="width: 62.5%; text-align: left;")
+									label(style="width: 98%; text-align: left; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px; padding-left: 15px;") Week 4 / July 2019
+							tr
+								th(colspan="1" style="width: 12.5%;")
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 21(sun)
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 22(mon)
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 23(tue)
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 24(wed)
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 25(thu)
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 26(fri)
+								th(style="text-align: center; width: 12.5%;")
+									label(style="width: 80%; text-align: center; border: 1px solid #d6d1d1; padding-top: 5px; padding-bottom: 5px;") 27(sat)
+						tbody
+							tr
+								td
+									label(style="width: 80%; height: 100%; margin-bottom: 0px;") 10:00 - 12:00
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+							tr
+								td
+									label(style="width: 80%; height: 100%; margin-bottom: 0px;") 12:00 - 14:00
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+							tr
+								td
+									label(style="width: 80%; height: 100%; margin-bottom: 0px;") 14:00 - 16:00
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+							tr
+								td
+									label(style="width: 80%; height: 100%; margin-bottom: 0px;") 16:00 - 18:00
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+								td
+									input(type="button" name="O" value="O" class="btn-info")
+				div.clearfix
+				div.row(style="padding-top: 5px;")
+					div.col-md-4.row
+						input(type="text" id="targetURLConfirm" name="targetURLConfirm" placeholder="targetURLConfirm" value="" style="width: 100%; font-size: 12px; text-align: center; ")
+					div.col-md-4
+						input(type="text" id="keywordConfirm" name="keywordConfirm" placeholder="keywordConfirm" value="" style="width: 100%; font-size: 12px; text-align: center; ")
+					div.col-md-4
+						input(type="text" name="date-jp" value="_ _, _ _ _JPY" style="width: 117%; font-size: 12px; text-align: center; color: red;")
+				div.clearfix
+				div.row(style="text-align: center; padding-top: 10px;")
+					div.col-md-4
+					div.col-md-4
+						a
+							input(type="button" id="btnReserve" name="btnReserve" value="Reserve" class="btn btn-success" style="width: 60%;")
+					div.col-md-4
+			div.col-md-2
+
+

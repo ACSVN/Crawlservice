@@ -1,0 +1,1797 @@
+@charset "utf-8";
+/*--------------------------------------------------
+        Navigation Setting CSS for ASCII.jp
+                        Last Modified 2019.9.3
+                        http://ascii.jp/
+						File Name:jpGlobalnav.css
+--------------------------------------------------*/
+/* General Menu */
+#jpWrap #header #generalMenu {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 22px;
+	overflow: hidden;
+}
+#jpWrap #header #generalMenu li {
+	margin: 0;
+	background-repeat: no-repeat;
+	float: left;
+	display: inline;
+	list-style-type: none;
+}
+#jpWrap #header #generalMenu li a {
+/*	padding: 22px 0 0;
+	height: 0; */
+	color: #000;
+	display: block;
+	overflow: hidden;
+	font-weight: normal;
+/* 20120111~ */
+	height: 21px;
+	text-indent: -5000px;
+}
+#jpWrap #header #generalMenu li#gmTop,
+#jpWrap #header #generalMenu li#gmTopCur {
+	width: 50px;
+}
+#jpWrap #header #generalMenu li#gmTop a {
+	background-position: 0 0;
+}
+#jpWrap #header #generalMenu li#gmTop a:hover,
+#jpWrap #header #generalMenu li#gmTopCur a {
+	background-position: 0 -22px;
+}
+#jpWrap #header #generalMenu li#gmAI,
+#jpWrap #header #generalMenu li#gmAICur {
+	width: 28px;
+}
+#jpWrap #header #generalMenu li#gmAI a {
+	background-position: -988px 0;
+}
+#jpWrap #header #generalMenu li#gmAI a:hover,
+#jpWrap #header #generalMenu li#gmAICur a {
+	background-position: -988px -22px;
+}
+#jpWrap #header #generalMenu li#gmIot,
+#jpWrap #header #generalMenu li#gmIotCur {
+	width: 33px;
+}
+#jpWrap #header #generalMenu li#gmIot a {
+	background-position: -955px 0;
+}
+#jpWrap #header #generalMenu li#gmIot a:hover,
+#jpWrap #header #generalMenu li#gmIotCur a {
+	background-position: -955px -22px;
+}
+#jpWrap #header #generalMenu li#gmBiz,
+#jpWrap #header #generalMenu li#gmBizCur {
+	width: 61px;
+}
+#jpWrap #header #generalMenu li#gmBiz a {
+	background-position: -50px 0;
+}
+#jpWrap #header #generalMenu li#gmBiz a:hover,
+#jpWrap #header #generalMenu li#gmBizCur a {
+	background-position: -50px -22px;
+}
+#jpWrap #header #generalMenu li#gmTech,
+#jpWrap #header #generalMenu li#gmTechCur {
+	width: 52px;
+}
+#jpWrap #header #generalMenu li#gmTech a {
+	background-position: -112px 0;
+}
+#jpWrap #header #generalMenu li#gmTech a:hover,
+#jpWrap #header #generalMenu li#gmTechCur a {
+	background-position: -112px -22px;
+}
+#jpWrap #header #generalMenu li#gmWebpro,
+#jpWrap #header #generalMenu li#gmWebproCur {
+	width: 66px;
+}
+#jpWrap #header #generalMenu li#gmWebpro a {
+	background-position: -165px 0;
+}
+#jpWrap #header #generalMenu li#gmWebpro a:hover,
+#jpWrap #header #generalMenu li#gmWebproCur a {
+	background-position: -165px -22px;
+}
+#jpWrap #header #generalMenu li#gmDigital,
+#jpWrap #header #generalMenu li#gmDigitalCur {
+	width: 62px;
+}
+#jpWrap #header #generalMenu li#gmDigital a {
+	background-position: -231px 0;
+}
+#jpWrap #header #generalMenu li#gmDigital a:hover,
+#jpWrap #header #generalMenu li#gmDigitalCur a {
+	background-position: -231px -22px;
+}
+#jpWrap #header #generalMenu li#gmMac,
+#jpWrap #header #generalMenu li#gmMacCur {
+	width: 87px;
+}
+#jpWrap #header #generalMenu li#gmMac a {
+	background-position: -293px 0;
+}
+#jpWrap #header #generalMenu li#gmMac a:hover,
+#jpWrap #header #generalMenu li#gmMacCur a {
+	background-position: -293px -22px;
+}
+#jpWrap #header #generalMenu li#gmHobby,
+#jpWrap #header #generalMenu li#gmHobbyCur {
+	width: 95px;
+}
+#jpWrap #header #generalMenu li#gmHobby a {
+	background-position: -380px 0;
+}
+#jpWrap #header #generalMenu li#gmHobby a:hover,
+#jpWrap #header #generalMenu li#gmHobbyCur a {
+	background-position: -380px -22px;
+}
+
+#jpWrap #header #generalMenu li#gmPc,
+#jpWrap #header #generalMenu li#gmPcCur {
+	width: 56px;
+}
+#jpWrap #header #generalMenu li#gmPc a {
+	background-position: -475px 0;
+}
+#jpWrap #header #generalMenu li#gmPc a:hover,
+#jpWrap #header #generalMenu li#gmPcCur a {
+	background-position: -475px -22px;
+}
+
+#jpWrap #header #generalMenu li#gmAV,
+#jpWrap #header #generalMenu li#gmAVCur {
+	width: 32px;
+}
+#jpWrap #header #generalMenu li#gmAV a {
+	background-position: -531px 0;
+}
+#jpWrap #header #generalMenu li#gmAV a:hover,
+#jpWrap #header #generalMenu li#gmAVCur a {
+	background-position: -531px -22px;
+}
+#jpWrap #header #generalMenu li#gmAkiba,
+#jpWrap #header #generalMenu li#gmAkibaCur {
+	width: 44px;
+}
+#jpWrap #header #generalMenu li#gmAkiba a {
+	background-position: -564px 0;
+}
+#jpWrap #header #generalMenu li#gmAkiba a:hover,
+#jpWrap #header #generalMenu li#gmAkibaCur a {
+	background-position: -564px -22px;
+}
+#jpWrap #header #generalMenu li#gmSphone,
+#jpWrap #header #generalMenu li#gmSphoneCur {
+	width: 42px;
+}
+#jpWrap #header #generalMenu li#gmSphone a {
+	background-position: -609px 0;
+}
+#jpWrap #header #generalMenu li#gmSphone a:hover,
+#jpWrap #header #generalMenu li#gmSphoneCur a {
+	background-position: -609px -22px;
+}
+#jpWrap #header #generalMenu li#gmStartup,
+#jpWrap #header #generalMenu li#gmStartupCur {
+	width: 81px;
+}
+#jpWrap #header #generalMenu li#gmStartup a {
+	background-position: -651px 0;
+}
+#jpWrap #header #generalMenu li#gmStartup a:hover,
+#jpWrap #header #generalMenu li#gmStartupCur a {
+	background-position: -651px -22px;
+}
+#jpWrap #header #generalMenu li#gmVr,
+#jpWrap #header #generalMenu li#gmVrCur {
+	width: 30px;
+}
+#jpWrap #header #generalMenu li#gmVr a {
+	background-position: -766px 0;
+}
+#jpWrap #header #generalMenu li#gmVr a:hover,
+#jpWrap #header #generalMenu li#gmVrCur a {
+	background-position: -766px -22px;
+}
+#jpWrap #header #generalMenu li#gmWear,
+#jpWrap #header #generalMenu li#gmWearCur {
+	width: 70px;
+}
+#jpWrap #header #generalMenu li#gmWear a {
+	background-position: -885px 0;
+}
+#jpWrap #header #generalMenu li#gmWear a:hover,
+#jpWrap #header #generalMenu li#gmWearCur a {
+	background-position: -885px -22px;
+}
+#jpWrap #header #generalMenu li#gmPgplus,
+#jpWrap #header #generalMenu li#gmPgplusCur {
+	width: 89px;
+}
+#jpWrap #header #generalMenu li#gmPgplus a {
+	background-position: -796px 0;
+}
+#jpWrap #header #generalMenu li#gmPgplus a:hover,
+#jpWrap #header #generalMenu li#gmPgplusCur a {
+	background-position: -796px -22px;
+}
+#jpWrap #header #generalMenu li#gmClub,
+#jpWrap #header #generalMenu li#gmClubCur {
+	margin-left: 59px;
+	width: 110px;
+}
+#jpWrap #header #generalMenu li#gmClub a {
+	background-position: -1090px 0;
+}
+#jpWrap #header #generalMenu li#gmClub a:hover,
+#jpWrap #header #generalMenu li#gmClubCur a {
+	background-position: -1090px -22px;
+}
+
+/* Colors */
+/*default*/
+#jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu.gif?201909031500);
+}
+#jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general.gif?201909031500);
+}
+/* black */
+#digital #jpWrap,
+#lenovo #jpWrap,
+#sim #jpWrap,
+#wear #jpWrap {
+	border-top-color: #333;
+}
+#digital #jpWrap #header #generalMenu,
+#mcafee #jpWrap #header #generalMenu,
+#lenovo #jpWrap #header #generalMenu,
+#sim #jpWrap #header #generalMenu,
+#wear #jpWrap #header #generalMenu,
+#yayoi #jpWrap #header #generalMenu,
+#yayoiArt #jpWrap #header #generalMenu,
+#acrobat #jpWrap #header #generalMenu,
+#sharp_b #jpWrap #header #generalMenu,
+#healthtech #jpWrap #header #generalMenu,
+#arrows #jpWrap #header #generalMenu,
+#hikaritv #jpWrap #header #generalMenu,
+#fixer #jpWrap #header #generalMenu,
+#slack #jpWrap #header #generalMenu,
+#dmmgames #jpWrap #header #generalMenu,
+#jitaneigo #jpWrap #header #generalMenu,
+#modernPC #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_bk.gif?201909031500);
+}
+#digital #jpWrap #header #generalMenu li a,
+#mcafee #jpWrap #header #generalMenu li a,
+#lenovo #jpWrap #header #generalMenu li a,
+#sim #jpWrap #header #generalMenu li a,
+#wear #jpWrap #header #generalMenu li a,
+#yayoi #jpWrap #header #generalMenu li a,
+#yayoiArt #jpWrap #header #generalMenu li a,
+#acrobat #jpWrap #header #generalMenu li a,
+#sharp_b #jpWrap #header #generalMenu li a,
+#healthtech #jpWrap #header #generalMenu li a,
+#arrows #jpWrap #header #generalMenu li a,
+#hikaritv #jpWrap #header #generalMenu li a,
+#fixer #jpWrap #header #generalMenu li a,
+#slack #jpWrap #header #generalMenu li a,
+#dmmgames #jpWrap #header #generalMenu li a,
+#jitaneigo #jpWrap #header #generalMenu li a,
+#modernPC #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_bk.gif?201909031500);
+}
+/* yellow */
+#akiba #jpWrap,
+#hobby #jpWrap,
+#pc #jpWrap {
+	border-top-color: #D5AA00;
+}
+#akiba #jpWrap #header #generalMenu,
+#hobby #jpWrap #header #generalMenu,
+#pc #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_ye.gif?201909031500);
+}
+#akiba #jpWrap #header #generalMenu li a,
+#hobby #jpWrap #header #generalMenu li a,
+#pc #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_ye.gif?201909031500);
+}
+/* green */
+#biz #jpWrap,
+#career #jpWrap {
+	border-top-color: #6D8318;
+}
+#biz #jpWrap #header #generalMenu,
+#career #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_gr.gif?201909031500);
+}
+#biz #jpWrap #header #generalMenu li a,
+#career #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_gr.gif?201909031500);
+}
+/* red */
+#nmag #jpWrap,
+#mAscii #jpWrap,
+#mac #jpWrap,
+#techno #jpWrap {
+	border-top-color: #600002;
+}
+#nmag #jpWrap #header #generalMenu,
+#mAscii #jpWrap #header #generalMenu,
+#mac #jpWrap #header #generalMenu,
+#techno #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_rd.gif?201909031500);
+}
+#mAscii #jpWrap #header #generalMenu li a,
+#nmag #jpWrap #header #generalMenu li a,
+#mac #jpWrap #header #generalMenu li a,
+#techno #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_rd.gif?201909031500);
+}
+/* silver */
+#web #jpWrap,
+#webTT #jpWrap {
+	border-top-color: #555;
+}
+#web #jpWrap #header #generalMenu,
+#webTT #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_web.gif?201909031500);
+}
+#web #jpWrap #header #generalMenu li a,
+#webTT #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_web.gif?201909031500);
+}
+/* sky blue */
+#money #jpWrap {
+	border-top-color: #004188;
+}
+#money #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_money.gif?201909031500);
+}
+#money #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_money.gif?201909031500);
+}
+/* vivid green */
+#winMob #jpWrap {
+	border-top-color: #428301;
+}
+#winMob #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_sphone.gif?201909031500);
+}
+#winMob #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_sphone.gif?201909031500);
+}
+/* full black */
+#pg #jpWrap,
+#av #jpWrap {
+	border-top-color: #222;
+}
+#pg #jpWrap #header,
+#av #jpWrap #header {
+	background-image: url(/img/0910/bg_generalheaderbk.gif);
+	background-color: #222;
+}
+#pg #jpWrap #header #generalMenu,
+#av #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_bk.gif?201909031500);
+}
+#pg #jpWrap #header #generalMenu li a,
+#av #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_bk.gif?201909031500);
+}
+#pg #jpWrap #footer,
+#av #jpWrap #footer {
+	background: #e8e8e8 url(/img/0910/bg_generalfooterbk.gif) repeat-x left top;
+}
+/* aqua blue */
+#cloud #jpWrap {
+	border-top-color: #6FB8FF;
+}
+#cloud #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_aqua.gif?201909031500);
+}
+#cloud #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_aqua.gif?201909031500);
+}
+/* vivid red */
+#nenga #jpWrap {
+	border-top-color: #C40000;
+}
+#nenga #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_nenga.gif?201909031500);
+}
+#nenga #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_nenga.gif?201909031500);
+}
+/* vivid red2 20130401~ */
+#cloud2 #jpWrap{
+	border-top-color: #a40418;
+}
+#cloud2 #jpWrap #header #generalMenu{
+	background-image: url(/img/0910/bg_generalmenu_cloud2.gif?201909031500);
+}
+#cloud2 #jpWrap #header #generalMenu li a{
+	background-image: url(/img/0910/menu_general_cloud2.gif?201909031500);
+}
+
+/* darkgreen 20110124~ */
+#it #jpWrap {
+	border-top-color: #324B03;
+}
+#it #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_tech.gif?201909031500);
+}
+#it #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_tech.gif?201909031500);
+}
+
+/* darkgray */
+#fossil #jpWrap,
+#clubinfo #jpWrap,
+#jaws #jpWrap,
+#kintone #jpWrap {
+	border-top-color: #444;
+}
+#robotics #jpWrap #header #generalMenu,
+#clipla #jpWrap #header #generalMenu,
+#fossil #jpWrap #header #generalMenu,
+#clubinfo #jpWrap #header #generalMenu,
+#jaws #jpWrap #header #generalMenu,
+#kintone #jpWrap #header #generalMenu,
+#aperza #jpWrap #header #generalMenu,
+#moverio #jpWrap #header #generalMenu,
+#dydo #jpWrap #header #generalMenu,
+#aurasync #jpWrap #header #generalMenu,
+#robotpay #jpWrap #header #generalMenu,
+#leaders #jpWrap #header #generalMenu,
+#seagate #jpWrap #header #generalMenu,
+#asusrog #jpWrap #header #generalMenu,
+#acer #jpWrap #header #generalMenu,
+#cashless #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_dgy.gif?201909031500);
+}
+#robotics #jpWrap #header #generalMenu li a,
+#clipla #jpWrap #header #generalMenu li a,
+#fossil #jpWrap #header #generalMenu li a,
+#clubinfo #jpWrap #header #generalMenu li a,
+#jaws #jpWrap #header #generalMenu li a,
+#kintone #jpWrap #header #generalMenu li a,
+#aperza #jpWrap #header #generalMenu li a,
+#moverio #jpWrap #header #generalMenu li a,
+#dydo #jpWrap #header #generalMenu li a,
+#aurasync #jpWrap #header #generalMenu li a,
+#robotpay #jpWrap #header #generalMenu li a,
+#leaders #jpWrap #header #generalMenu li a,
+#seagate #jpWrap #header #generalMenu li a,
+#asusrog #jpWrap #header #generalMenu li a,
+#aser #jpWrap #header #generalMenu li a,
+#cashless #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_dgy.gif?201909031500);
+}
+
+/* blue */
+#gamingpc #jpWrap,
+#sphone #jpWrap,
+#sharp #jpWrap,
+#wireless #jpWrap,
+#abo #jpWrap,
+#panaspot #jpWrap,
+#microsoft #jpWrap,
+#ituse #jpWrap,
+#epson #jpWrap,
+#ad #jpWrap {
+	border-top-color: #272391;
+}
+#gamingpc #jpWrap #header #generalMenu,
+#sphone #jpWrap #header #generalMenu,
+#sharp #jpWrap #header #generalMenu,
+#fujitsu #jpWrap #header #generalMenu,
+#wireless #jpWrap #header #generalMenu,
+#abo #jpWrap #header #generalMenu,
+#panaspot #jpWrap #header #generalMenu,
+#microsoft #jpWrap #header #generalMenu,
+#ituse #jpWrap #header #generalMenu,
+#epson #jpWrap #header #generalMenu,
+#ad #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_bl.gif?201909031500);
+}
+#gamingpc #jpWrap #header #generalMenu li a,
+#sphone #jpWrap #header #generalMenu li a,
+#sharp #jpWrap #header #generalMenu li a,
+#fujitsu #jpWrap #header #generalMenu li a,
+#wireless #jpWrap #header #generalMenu li a,
+#abo #jpWrap #header #generalMenu li a,
+#panaspot #jpWrap #header #generalMenu li a,
+#microsoft #jpWrap #header #generalMenu li a,
+#ituse #jpWrap #header #generalMenu li a,
+#epson #jpWrap #header #generalMenu li a,
+#ad #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_bl.gif?201909031500);
+}
+/* ELECOM */
+#elecom #jpWrap {
+	border-top-color: #003F98;
+}
+#elecom #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_elecom.gif?201909031500);
+}
+#elecom #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_elecom.gif?201909031500);
+}
+
+/* NEC Direct*/
+#nec #jpWrap							{	border-top: 3px solid #333333;}
+#nec #jpWrap #header #generalMenu		{	background-image: url(/img/0910/bg_generalmenu_bk.gif?201909031500);}
+#nec #jpWrap #header #generalMenu li a	{	background-image: url(/img/0910/menu_general_bk.gif?201909031500);}
+/* SAO */
+#sao-su #jpWrap #header #generalMenu,
+#kakuyomu #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_sao2.gif?201909031500);
+}
+#sao-su #jpWrap #header #generalMenu li a,
+#kakuyomu #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_sao2.gif?201909031500);
+}
+/* 家電 */
+#kaden #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_kaden.gif?201909031500);
+}
+#kaden #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_kaden.gif?201909031500);
+}
+/* IoT */
+#iot #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_iot.gif?201909031500);
+}
+#iot #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_iot.gif?201909031500);
+}
+/* AI */
+#ai #jpWrap {
+	border-top-color: #191955;
+}
+#ai #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_ai.gif?201909031500);
+}
+#ai #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_ai.gif?201909031500);
+}
+/* kids */
+#asciikids #jpWrap {
+	border-top-color: #2b9a33;
+}
+#asciikids #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_kids.gif?201909031500);
+}
+#asciikids #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_kids.gif?201909031500);
+}
+/* Sports Business */
+#sports #jpWrap {
+	border-top: 3px solid #87CEFA;
+}
+#sports #jpWrap #header #generalMenu {
+	background-image: url(/img/0910/bg_generalmenu_sports.gif?201909031500);
+}
+#sports #jpWrap #header #generalMenu li a {
+	background-image: url(/img/0910/menu_general_sports.gif?201909031500);
+}
+
+/* Second Menu + Microsite Menu */
+#jpWrap #header #secondMenu,
+#jpWrap #header #msMenu {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-position: left top;
+	background: transparent url(/img/0910/bg_secondmenu.gif?201909031500) left top;
+	overflow: hidden;
+}
+#jpWrap #header #secondMenu {
+	margin: 0 0 1px;
+}
+#jpWrap #header #secondMenu li,
+#jpWrap #header #msMenu li {
+	margin: 0;
+	background-repeat: no-repeat;
+	float: left;
+	display: inline;
+	list-style-type: none;
+}
+#jpWrap #header #secondMenu li a,
+#jpWrap #header #msMenu li a {
+/* 	padding: 18px 0 0;
+	height: 0; */
+	color: #000;
+	display: block;
+	overflow: hidden;
+	font-weight: normal;
+/* 20120111~ */
+	height: 18px;
+	text-indent: -5000px;
+}
+/* Second Menu Tab */
+#jpWrap #header #secondMenu li#smKids,
+#jpWrap #header #secondMenu li#smKidsCur {
+	width: 78px;
+}
+#jpWrap #header #secondMenu li#smKids a {
+	background-position: -1280px -36px;
+}
+#jpWrap #header #secondMenu li#smKids a:hover,
+#jpWrap #header #secondMenu li#smKidsCur a {
+	background-position: -1280px -54px;
+}
+#jpWrap #header #secondMenu li#smSim,
+#jpWrap #header #secondMenu li#smSimCur {
+	width: 56px;
+}
+#jpWrap #header #secondMenu li#smSim a {
+	background-position: -647px -36px;
+}
+#jpWrap #header #secondMenu li#smSim a:hover,
+#jpWrap #header #secondMenu li#smSimCur a {
+	background-position: -647px -54px;
+}
+#jpWrap #header #secondMenu li#smDenki,
+#jpWrap #header #secondMenu li#smDenkiCur {
+	width: 35px;
+}
+#jpWrap #header #secondMenu li#smDenki a {
+	background-position: -612px -36px;
+}
+#jpWrap #header #secondMenu li#smDenki a:hover,
+#jpWrap #header #secondMenu li#smDenkiCur a {
+	background-position: -612px -54px;
+}
+#jpWrap #header #secondMenu li#smSao,
+#jpWrap #header #secondMenu li#smSaoCur {
+	width: 37px;
+}
+#jpWrap #header #secondMenu li#smSao a {
+	background-position: -511px -36px;
+}
+#jpWrap #header #secondMenu li#smSao a:hover,
+#jpWrap #header #secondMenu li#smSaoCur a {
+	background-position: -511px -54px;
+}
+#jpWrap #header #secondMenu li#smWin,
+#jpWrap #header #secondMenu li#smWinCur {
+	width: 64px;
+}
+#jpWrap #header #secondMenu li#smWin a {
+	background-position: -703px -36px;
+}
+#jpWrap #header #secondMenu li#smWin a:hover,
+#jpWrap #header #secondMenu li#smWinCur a {
+	background-position: -703px -54px;
+}
+#jpWrap #header #secondMenu li#smSteam,
+#jpWrap #header #secondMenu li#smSteamCur {
+	width: 47px;
+}
+#jpWrap #header #secondMenu li#smSteam a {
+	background-position: -767px -36px;
+}
+#jpWrap #header #secondMenu li#smSteam a:hover,
+#jpWrap #header #secondMenu li#smSteamCur a {
+	background-position: -767px -54px;
+}
+#jpWrap #header #secondMenu li#smKaden,
+#jpWrap #header #secondMenu li#smKadenCur {
+	width: 66px;
+}
+#jpWrap #header #secondMenu li#smKaden a {
+	background-position: -445px -36px;
+}
+#jpWrap #header #secondMenu li#smKaden a:hover,
+#jpWrap #header #secondMenu li#smKadenCur a {
+	background-position: -445px -54px;
+}
+#jpWrap #header #secondMenu li#smAsciiTV,
+#jpWrap #header #secondMenu li#smAsciiTVCur {
+	width: 63px;
+}
+#jpWrap #header #secondMenu li#smAsciiTV a {
+	background-position: -549px -36px;
+}
+#jpWrap #header #secondMenu li#smAsciiTV a:hover,
+#jpWrap #header #secondMenu li#smAsciiTVCur a {
+	background-position: -549px -54px;
+}
+#jpWrap #header #secondMenu li#smGourmet,
+#jpWrap #header #secondMenu li#smGourmetCur {
+	width: 78px;
+}
+#jpWrap #header #secondMenu li#smGourmet a {
+	background-position: -1121px -36px;
+}
+#jpWrap #header #secondMenu li#smGourmet a:hover,
+#jpWrap #header #secondMenu li#smGourmetCur a {
+	background-position: -1121px -54px;
+}
+#jpWrap #header #secondMenu li#smStore,
+#jpWrap #header #secondMenu li#smStoreCur {
+	width: 72px;
+}
+#jpWrap #header #secondMenu li#smStore a {
+	background-position: -814px -36px;
+}
+#jpWrap #header #secondMenu li#smStore a:hover,
+#jpWrap #header #secondMenu li#smStoreCur a {
+	background-position: -814px -54px;
+}
+#jpWrap #header #secondMenu li#smWam,
+#jpWrap #header #secondMenu li#smWamCur {
+	width: 70px;
+}
+#jpWrap #header #secondMenu li#smWam a {
+	background-position: -886px -36px;
+}
+#jpWrap #header #secondMenu li#smWam a:hover,
+#jpWrap #header #secondMenu li#smWamCur a {
+	background-position: -886px -54px;
+}
+#jpWrap #header #secondMenu li#smClubinfo,
+#jpWrap #header #secondMenu li#smClubinfoCur {
+	width: 71px;
+}
+#jpWrap #header #secondMenu li#smClubinfo a {
+	background-position: -956px -36px;
+}
+#jpWrap #header #secondMenu li#smClubinfo a:hover,
+#jpWrap #header #secondMenu li#smClubinfoCur a {
+	background-position: -956px -54px;
+}
+#jpWrap #header #secondMenu li#smTeamLeaders,
+#jpWrap #header #secondMenu li#smTeamLeadersCur {
+	width: 81px;
+}
+#jpWrap #header #secondMenu li#smTeamLeaders a {
+	background-position: -1200px -36px;
+}
+#jpWrap #header #secondMenu li#smTeamLeaders a:hover,
+#jpWrap #header #secondMenu li#smTeamLeadersCur a {
+	background-position: -1200px -54px;
+}
+#jpWrap #header #secondMenu li#smPgplus,
+#jpWrap #header #secondMenu li#smPgplusCur {
+	width: 84px;
+}
+#jpWrap #header #secondMenu li#smPgplus a {
+	background-position: -1359px -36px;
+}
+#jpWrap #header #secondMenu li#smPgplus a:hover,
+#jpWrap #header #secondMenu li#smPgplusCur a {
+	background-position: -1359px -54px;
+}
+#jpWrap #header #secondMenu li#smClubWam,
+#jpWrap #header #secondMenu li#smClubWamCur {
+	margin-left: 20px;
+	width: 78px;
+}
+#jpWrap #header #secondMenu li#smClubWam a {
+	background-position: -1026px 0;
+}
+#jpWrap #header #secondMenu li#smClubWam a:hover,
+#jpWrap #header #secondMenu li#smClubWamCur a {
+	background-position: -1026px -18px;
+}
+#jpWrap #header #secondMenu li#smClubMovie,
+#jpWrap #header #secondMenu li#smClubMovieCur {
+	width: 76px;
+}
+#jpWrap #header #secondMenu li#smClubMovie a {
+	background-position: -1103px 0;
+}
+#jpWrap #header #secondMenu li#smClubMovie a:hover,
+#jpWrap #header #secondMenu li#smClubMovieCur a {
+	background-position: -1103px -18px;
+}
+#jpWrap #header #secondMenu li#smClubRepo,
+#jpWrap #header #secondMenu li#smClubRepoCur {
+	width: 76px;
+}
+#jpWrap #header #secondMenu li#smClubRepo a {
+	background-position: -1179px 0;
+}
+#jpWrap #header #secondMenu li#smClubRepo a:hover,
+#jpWrap #header #secondMenu li#smClubRepoCur a {
+	background-position: -1179px -18px;
+}
+#jpWrap #header #secondMenu li#smHealth,
+#jpWrap #header #secondMenu li#smHealthCur {
+	width: 73px;
+}
+#jpWrap #header #secondMenu li#smHealth a {
+	background-position: -1439px -0px;
+}
+#jpWrap #header #secondMenu li#smHealth a:hover,
+#jpWrap #header #secondMenu li#smHealthCur a {
+	background-position: -1439px -18px;
+}
+#jpWrap #header #secondMenu li#smSports,
+#jpWrap #header #secondMenu li#smSportsCur {
+	width: 49px;
+}
+#jpWrap #header #secondMenu li#smSports a {
+	background-position: -1443px -36px;
+}
+#jpWrap #header #secondMenu li#smSports a:hover,
+#jpWrap #header #secondMenu li#smSportsCur a {
+	background-position: -1443px -54px;
+}
+#jpWrap #header #secondMenu li#smCashless,
+#jpWrap #header #secondMenu li#smCashlessCur {
+	width: 72px;
+}
+#jpWrap #header #secondMenu li#smCashless a {
+	background-position: -1514px -0px;
+}
+#jpWrap #header #secondMenu li#smCashless a:hover,
+#jpWrap #header #secondMenu li#smCashlessCur a {
+	background-position: -1514px -18px;
+}
+/* Microsite Menu */
+#jpWrap #header #msMenu li#smPana,
+#jpWrap #header #msMenu li#smPanaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smPana a {
+	background-position: 0 0;
+}
+#jpWrap #header #msMenu li#smPana a:hover,
+#jpWrap #header #msMenu li#smPanaCur a {
+	background-position: 0 -18px;
+}
+#jpWrap #header #msMenu li#smFujitsu,
+#jpWrap #header #msMenu li#smFujitsuCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smFujitsu a {
+	background-position: -54px 0;
+}
+#jpWrap #header #msMenu li#smFujitsu a:hover,
+#jpWrap #header #msMenu li#smFujitsuCur a {
+	background-position: -54px -18px;
+}
+#jpWrap #header #msMenu li#smDell,
+#jpWrap #header #msMenu li#smDellCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smDell a {
+	background-position: -108px 0;
+}
+#jpWrap #header #msMenu li#smDell a:hover,
+#jpWrap #header #msMenu li#smDellCur a {
+	background-position: -108px -18px;
+}
+
+#jpWrap #header #msMenu li#smEpson,
+#jpWrap #header #msMenu li#smEpsonCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smEpson a {
+	background-position: -216px 0;
+}
+#jpWrap #header #msMenu li#smEpson a:hover,
+#jpWrap #header #msMenu li#smEpsonCur a {
+	background-position: -216px -18px;
+}
+#jpWrap #header #msMenu li#smMcj,
+#jpWrap #header #msMenu li#smMcjCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smMcj a {
+	background-position: -270px 0;
+}
+#jpWrap #header #msMenu li#smMcj a:hover,
+#jpWrap #header #msMenu li#smMcjCur a {
+	background-position: -270px -18px;
+}
+#jpWrap #header #msMenu li#smToshiba,
+#jpWrap #header #msMenu li#smToshibaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smToshiba a {
+	background-position: -324px 0;
+}
+#jpWrap #header #msMenu li#smToshiba a:hover,
+#jpWrap #header #msMenu li#smToshibaCur a {
+	background-position: -324px -18px;
+}
+#jpWrap #header #msMenu li#smMcafee,
+#jpWrap #header #msMenu li#smMcafeeCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smMcafee a {
+	background-position: -378px 0;
+}
+#jpWrap #header #msMenu li#smMcafee a:hover,
+#jpWrap #header #msMenu li#smMcafeeCur a {
+	background-position: -378px -18px;
+}
+#jpWrap #header #msMenu li#smElecom,
+#jpWrap #header #msMenu li#smElecomCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smElecom a {
+	background-position: -432px 0;
+}
+#jpWrap #header #msMenu li#smElecom a:hover,
+#jpWrap #header #msMenu li#smElecomCur a {
+	background-position: -432px -18px;
+}
+#jpWrap #header #msMenu li#smHpj,
+#jpWrap #header #msMenu li#smHpjCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smHpj a {
+	background-position: -486px 0;
+}
+#jpWrap #header #msMenu li#smHpj a:hover,
+#jpWrap #header #msMenu li#smHpjCur a {
+	background-position: -486px -18px;
+}
+#jpWrap #header #msMenu li#smIiyama,
+#jpWrap #header #msMenu li#smIiyamaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smIiyama a {
+	background-position: -540px 0;
+}
+#jpWrap #header #msMenu li#smIiyama a:hover,
+#jpWrap #header #msMenu li#smIiyamaCur a {
+	background-position: -540px -18px;
+}
+#jpWrap #header #msMenu li#smDospara,
+#jpWrap #header #msMenu li#smDosparaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smDospara a {
+	background-position: -594px 0;
+}
+#jpWrap #header #msMenu li#smDospara a:hover,
+#jpWrap #header #msMenu li#smDosparaCur a {
+	background-position: -594px -18px;
+}
+#jpWrap #header #msMenu li#smAmd,
+#jpWrap #header #msMenu li#smAmdCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smAmd a {
+	background-position: -648px 0;
+}
+#jpWrap #header #msMenu li#smAmd a:hover,
+#jpWrap #header #msMenu li#smAmdCur a {
+	background-position: -648px -18px;
+}
+#jpWrap #header #msMenu li#smRadeon,
+#jpWrap #header #msMenu li#smRadeonCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smRadeon a {
+	background-position: -702px 0;
+}
+#jpWrap #header #msMenu li#smRadeon a:hover,
+#jpWrap #header #msMenu li#smRadeonCur a {
+	background-position: -702px -18px;
+}
+#jpWrap #header #msMenu li#smLenovo,
+#jpWrap #header #msMenu li#smLenovoCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smLenovo a {
+	background-position: -162px 0;
+}
+#jpWrap #header #msMenu li#smLenovo a:hover,
+#jpWrap #header #msMenu li#smLenovoCur a {
+	background-position: -162px -18px;
+}
+#jpWrap #header #msMenu li#smTsukumo,
+#jpWrap #header #msMenu li#smTsukumoCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smTsukumo a {
+	background-position: -378px -36px;
+}
+#jpWrap #header #msMenu li#smTsukumo a:hover,
+#jpWrap #header #msMenu li#smTsukumoCur a {
+	background-position: -378px -54px;
+}
+#jpWrap #header #msMenu li#smSycom,
+#jpWrap #header #msMenu li#smSycomCur {
+	width: 55px;
+}
+#jpWrap #header #msMenu li#smSycom a {
+	background-position: 0 -72px;
+}
+#jpWrap #header #msMenu li#smSycom a:hover,
+#jpWrap #header #msMenu li#smSycomCur a {
+	background-position: 0 -90px;
+}
+#jpWrap #header #msMenu li#smAurasync,
+#jpWrap #header #msMenu li#smAurasyncCur {
+	margin-right: 0;
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smAurasync a {
+	background-position: -109px -72px;
+}
+#jpWrap #header #msMenu li#smAurasync a:hover,
+#jpWrap #header #msMenu li#smAurasyncCur a {
+	background-position: -109px -90px;
+}
+#jpWrap #header #msMenu li#smAsusRog,
+#jpWrap #header #msMenu li#smAsusRogCur {
+	margin-right: 0;
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smAsusRog a {
+	background-position: -109px -72px;
+}
+#jpWrap #header #msMenu li#smAsusRog a:hover,
+#jpWrap #header #msMenu li#smAsusRogCur a {
+	background-position: -109px -90px;
+}
+#jpWrap #header #msMenu li#smSeagate,
+#jpWrap #header #msMenu li#smSeagateCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smSeagate a {
+	background-position: -433px -72px;
+}
+#jpWrap #header #msMenu li#smSeagate a:hover,
+#jpWrap #header #msMenu li#smSeagateCur a {
+	background-position: -433px -90px;
+}
+#jpWrap #header #msMenu li#smAcer,
+#jpWrap #header #msMenu li#smAcerCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smAcer a {
+	background-position: -541px -72px;
+}
+#jpWrap #header #msMenu li#smAcer a:hover,
+#jpWrap #header #msMenu li#smAcerCur a {
+	background-position: -541px -90px;
+}
+#jpWrap #header #msMenu li#smSeven,
+#jpWrap #header #msMenu li#smSevenCur {
+	margin-right: 0 !important;
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smSeven a {
+	background-position: -1081px -72px;
+}
+#jpWrap #header #msMenu li#smSeven a:hover,
+#jpWrap #header #msMenu li#smSevenCur a {
+	background-position: -1081px -90px;
+}
+#jpWrap #header #msMenu li#smModernPC,
+#jpWrap #header #msMenu li#smModernPCCur {
+	margin-right: 31px;
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smModernPC a {
+	background-position: -1189px -72px;
+}
+#jpWrap #header #msMenu li#smModernPC a:hover,
+#jpWrap #header #msMenu li#smModernPCCur a {
+	background-position: -1189px -90px;
+}
+#jpWrap #header #msMenu li#smYayoi,
+#jpWrap #header #msMenu li#smYayoiCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smYayoi a {
+	background-position: -756px 0;
+}
+#jpWrap #header #msMenu li#smYayoi a:hover,
+#jpWrap #header #msMenu li#smYayoiCur a {
+	background-position: -756px -18px;
+}
+#jpWrap #header #msMenu li#smNetgear,
+#jpWrap #header #msMenu li#smNetgearCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smNetgear a {
+	background-position: -810px 0;
+}
+#jpWrap #header #msMenu li#smNetgear a:hover,
+#jpWrap #header #msMenu li#smNetgearCur a {
+	background-position: -810px -18px;
+}
+#jpWrap #header #msMenu li#smHuawei,
+#jpWrap #header #msMenu li#smHuaweiCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smHuawei a {
+	background-position: -918px 0;
+}
+#jpWrap #header #msMenu li#smHuawei a:hover,
+#jpWrap #header #msMenu li#smHuaweiCur a {
+	background-position: -918px -18px;
+}
+#jpWrap #header #msMenu li#smJaws,
+#jpWrap #header #msMenu li#smJawsCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smJaws a {
+	background-position: -972px 0;
+}
+#jpWrap #header #msMenu li#smJaws a:hover,
+#jpWrap #header #msMenu li#smJawsCur a {
+	background-position: -972px -18px;
+}
+#jpWrap #header #msMenu li#smSakura,
+#jpWrap #header #msMenu li#smSakuraCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smSakura a {
+	background-position: 0 -36px;
+}
+#jpWrap #header #msMenu li#smSakura a:hover,
+#jpWrap #header #msMenu li#smSakuraCur a {
+	background-position: 0 -54px;
+}
+#jpWrap #header #msMenu li#smKnot,
+#jpWrap #header #msMenu li#smKnotCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smKnot a {
+	background-position: -54px -36px;
+}
+#jpWrap #header #msMenu li#smKnot a:hover,
+#jpWrap #header #msMenu li#smKnotCur a {
+	background-position: -54px -54px;
+}
+#jpWrap #header #msMenu li#smXperia,
+#jpWrap #header #msMenu li#smXperiaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smXperia a {
+	background-position: -108px -36px;
+}
+#jpWrap #header #msMenu li#smXperia a:hover,
+#jpWrap #header #msMenu li#smXperiaCur a {
+	background-position: -108px -54px;
+}
+#jpWrap #header #msMenu li#smFossil,
+#jpWrap #header #msMenu li#smFossilCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smFossil a {
+	background-position: -162px -36px;
+}
+#jpWrap #header #msMenu li#smFossil a:hover,
+#jpWrap #header #msMenu li#smFossilCur a {
+	background-position: -162px -54px;
+}
+#jpWrap #header #msMenu li#smClipla,
+#jpWrap #header #msMenu li#smCliplaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smClipla a {
+	background-position: -216px -36px;
+}
+#jpWrap #header #msMenu li#smClipla a:hover,
+#jpWrap #header #msMenu li#smCliplaCur a {
+	background-position: -216px -54px;
+}
+#jpWrap #header #msMenu li#smKintone,
+#jpWrap #header #msMenu li#smKintoneCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smKintone a {
+	background-position: -270px -36px;
+}
+#jpWrap #header #msMenu li#smKintone a:hover,
+#jpWrap #header #msMenu li#smKintoneCur a {
+	background-position: -270px -54px;
+}
+#jpWrap #header #msMenu li#smAcrobat,
+#jpWrap #header #msMenu li#smAcrobatCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smAcrobat a {
+	background-position: -324px -36px;
+}
+#jpWrap #header #msMenu li#smAcrobat a:hover,
+#jpWrap #header #msMenu li#smAcrobatCur a {
+	background-position: -324px -54px;
+}
+#jpWrap #header #msMenu li#smMoverio,
+#jpWrap #header #msMenu li#smMoverioCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smMoverio a {
+	background-position: -54px -72px;
+}
+#jpWrap #header #msMenu li#smMoverio a:hover,
+#jpWrap #header #msMenu li#smMoverioCur a {
+	background-position: -54px -90px;
+}
+#jpWrap #header #msMenu li#smVive,
+#jpWrap #header #msMenu li#smViveCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smVive a {
+	background-position: -162px -72px;
+}
+#jpWrap #header #msMenu li#smVive a:hover,
+#jpWrap #header #msMenu li#smViveCur a {
+	background-position: -162px -90px;
+}
+#jpWrap #header #msMenu li#smDydo,
+#jpWrap #header #msMenu li#smDydoCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smDydo a {
+	background-position: -216px -72px;
+}
+#jpWrap #header #msMenu li#smDydo a:hover,
+#jpWrap #header #msMenu li#smDydoCur a {
+	background-position: -216px -90px;
+}
+#jpWrap #header #msMenu li#smAperza,
+#jpWrap #header #msMenu li#smAperzaCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smAperza a {
+	background-position: -270px -72px;
+}
+#jpWrap #header #msMenu li#smAperza a:hover,
+#jpWrap #header #msMenu li#smAperzaCur a {
+	background-position: -270px -90px;
+}
+#jpWrap #header #msMenu li#smPlanetway,
+#jpWrap #header #msMenu li#smPlanetwayCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smPlanetway a {
+	background-position: -324px -72px;
+}
+#jpWrap #header #msMenu li#smPlanetway a:hover,
+#jpWrap #header #msMenu li#smPlanetwayCur a {
+	background-position: -324px -90px;
+}
+#jpWrap #header #msMenu li#smRobotPay,
+#jpWrap #header #msMenu li#smRobotPayCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smRobotPay a {
+	background-position: -378px -72px;
+}
+#jpWrap #header #msMenu li#smRobotPay a:hover,
+#jpWrap #header #msMenu li#smRobotPayCur a {
+	background-position: -378px -90px;
+}
+#jpWrap #header #msMenu li#smSharpB,
+#jpWrap #header #msMenu li#smSharpBCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smSharpB a {
+	background-position: -486px -72px;
+}
+#jpWrap #header #msMenu li#smSharpB a:hover,
+#jpWrap #header #msMenu li#smSharpBCur a {
+	background-position: -486px -90px;
+}
+#jpWrap #header #msMenu li#smEset,
+#jpWrap #header #msMenu li#smEsetCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smEset a {
+	background-position: -594px -72px;
+}
+#jpWrap #header #msMenu li#smEset a:hover,
+#jpWrap #header #msMenu li#smEsetCur a {
+	background-position: -594px -90px;
+}
+#jpWrap #header #msMenu li#smFixer,
+#jpWrap #header #msMenu li#smFixerCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smFixer a {
+	background-position: -648px -72px;
+}
+#jpWrap #header #msMenu li#smFixer a:hover,
+#jpWrap #header #msMenu li#smFixerCur a {
+	background-position: -648px -90px;
+}
+#jpWrap #header #msMenu li#smHikaritv,
+#jpWrap #header #msMenu li#smHikaritvCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smHikaritv a {
+	background-position: -702px -72px;
+}
+#jpWrap #header #msMenu li#smHikaritv a:hover,
+#jpWrap #header #msMenu li#smHikaritvCur a {
+	background-position: -702px -90px;
+}
+#jpWrap #header #msMenu li#smArrows,
+#jpWrap #header #msMenu li#smArrowsCur {
+	width: 55px;
+}
+#jpWrap #header #msMenu li#smArrows a {
+	background-position: -756px -72px;
+}
+#jpWrap #header #msMenu li#smArrows a:hover,
+#jpWrap #header #msMenu li#smArrowsCur a {
+	background-position: -756px -90px;
+}
+#jpWrap #header #msMenu li#smSlack,
+#jpWrap #header #msMenu li#smSlackCur {
+	margin-right: 85px;
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smSlack a {
+	background-position: -811px -72px;
+}
+#jpWrap #header #msMenu li#smSlack a:hover,
+#jpWrap #header #msMenu li#smSlackCur a {
+	background-position: -811px -90px;
+}
+#jpWrap #header #msMenu li#smLineClova,
+#jpWrap #header #msMenu li#smLineClovaCur {
+	margin-right: 0;
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smLineClova a {
+	background-position: -919px -72px;
+}
+#jpWrap #header #msMenu li#smLineClova a:hover,
+#jpWrap #header #msMenu li#smLineClovaCur a {
+	background-position: -919px -90px;
+}
+#jpWrap #header #msMenu li#smDMMGames,
+#jpWrap #header #msMenu li#smDMMGamesCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smDMMGames a {
+	background-position: -973px -72px;
+}
+#jpWrap #header #msMenu li#smDMMGames a:hover,
+#jpWrap #header #msMenu li#smDMMGamesCur a {
+	background-position: -973px -90px;
+}
+#jpWrap #header #msMenu li#smJitaneigo,
+#jpWrap #header #msMenu li#smJitaneigoCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smJitaneigo a {
+	background-position: -1027px -72px;
+}
+#jpWrap #header #msMenu li#smJitaneigo a:hover,
+#jpWrap #header #msMenu li#smJitaneigoCur a {
+	background-position: -1027px -90px;
+}
+#jpWrap #header #msMenu li#smCitizen,
+#jpWrap #header #msMenu li#smCitizenCur {
+	width: 54px;
+}
+#jpWrap #header #msMenu li#smCitizen a {
+	background-position: -1135px -72px;
+}
+#jpWrap #header #msMenu li#smCitizen a:hover,
+#jpWrap #header #msMenu li#smCitizenCur a {
+	background-position: -1135px -90px;
+}
+/* tie-up */
+#jpWrap #header #msMenu li#smNoMaps2019,
+#jpWrap #header #msMenu li#smNoMaps2019Cur {
+	width: 80px;
+}
+#jpWrap #header #msMenu li#smNoMaps2019 a {
+	background-position: -1520px -72px;
+}
+#jpWrap #header #msMenu li#smNoMaps2019 a:hover,
+#jpWrap #header #msMenu li#smNoMaps2019Cur a {
+	background-position: -1520px -90px;
+}
+#jpWrap #header #msMenu li#smKakuyomu,
+#jpWrap #header #msMenu li#smKakuyomuCur {
+	margin-left: 652px;
+	width: 110px;
+}
+#jpWrap #header #msMenu li#smKakuyomu a {
+	background-position: -864px -0px;
+	background-position: -1330px -0px;
+}
+#jpWrap #header #msMenu li#smKakuyomu a:hover,
+#jpWrap #header #msMenu li#smKakuyomuCur a {
+	background-position: -864px -0px;
+	background-position: -1330px -18px;
+}
+
+/* Colors */
+/* default */
+#jpWrap #header #secondMenu,
+#jpWrap #header #msMenu  {
+	background-image: url(/img/0910/bg_secondmenu.gif?201909031500);
+}
+#jpWrap #header #secondMenu li a,
+#jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second.gif?201909031500);
+}
+
+/* black */
+#digital #jpWrap #header #secondMenu,
+#mcafee #jpWrap #header #secondMenu,
+#lenovo #jpWrap #header #secondMenu,
+#sim #jpWrap #header #secondMenu,
+#wear #jpWrap #header #secondMenu,
+#steam #jpWrap #header #secondMenu,
+#epower #jpWrap #header #secondMenu,
+#xperia #jpWrap #header #secondMenu,
+#healthtech #jpWrap #header #secondMenu,
+#digital #jpWrap #header #msMenu,
+#mcafee #jpWrap #header #msMenu,
+#lenovo #jpWrap #header #msMenu,
+#sim #jpWrap #header #msMenu,
+#wear #jpWrap #header #msMenu,
+#steam #jpWrap #header #msMenu,
+#epower #jpWrap #header #msMenu,
+#xperia #jpWrap #header #msMenu,
+#healthtech #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_bk.gif?201909031500);
+}
+#digital #jpWrap #header #secondMenu li a,
+#mcafee #jpWrap #header #secondMenu li a,
+#lenovo #jpWrap #header #secondMenu li a,
+#sim #jpWrap #header #secondMenu li a,
+#wear #jpWrap #header #secondMenu li a,
+#steam #jpWrap #header #secondMenu li a,
+#epower #jpWrap #header #secondMenu li a,
+#xperia #jpWrap #header #secondMenu li a,
+#healthtech #jpWrap #header #secondMenu li a,
+#digital #jpWrap #header #msMenu li a,
+#mcafee #jpWrap #header #msMenu li a,
+#lenovo #jpWrap #header #msMenu li a,
+#sim #jpWrap #header #msMenu li a,
+#wear #jpWrap #header #msMenu li a,
+#steam #jpWrap #header #msMenu li a,
+#epower #jpWrap #header #msMenu li a,
+#xperia #jpWrap #header #msMenu li a,
+#healthtech #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_bk.gif?201909031500);
+}
+
+/* yellow */
+#akiba #jpWrap #header #secondMenu,
+#hobby #jpWrap #header #secondMenu,
+#pc #jpWrap #header #secondMenu,
+#akiba #jpWrap #header #msMenu,
+#hobby #jpWrap #header #msMenu,
+#pc #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_ye.gif?201909031500);
+}
+#akiba #jpWrap #header #secondMenu li a,
+#hobby #jpWrap #header #secondMenu li a,
+#pc #jpWrap #header #secondMenu li a,
+#akiba #jpWrap #header #msMenu li a,
+#hobby #jpWrap #header #msMenu li a,
+#pc #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_ye.gif?201909031500);
+}
+
+/* green */
+#biz #jpWrap #header #secondMenu,
+#biz #jpWrap #header #msMenu,
+#career #jpWrap #header #secondMenu,
+#career #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_gr.gif?201909031500);
+}
+#biz #jpWrap #header #secondMenu li a,
+#biz #jpWrap #header #msMenu li a,
+#career #jpWrap #header #secondMenu li a,
+#career #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_gr.gif?201909031500);
+}
+
+/* red */
+#mAscii #jpWrap #header #secondMenu,
+#nmag #jpWrap #header #secondMenu,
+#mac #jpWrap #header #secondMenu,
+#techno #jpWrap #header #secondMenu,
+#mAscii #jpWrap #header #msMenu,
+#nmag #jpWrap #header #msMenu,
+#mac #jpWrap #header #msMenu,
+#techno #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_rd.gif?201909031500);
+}
+#mAscii #jpWrap #header #secondMenu li a,
+#nmag #jpWrap #header #secondMenu li a,
+#mac #jpWrap #header #secondMenu li a,
+#techno #jpWrap #header #secondMenu li a,
+#mAscii #jpWrap #header #msMenu li a,
+#nmag #jpWrap #header #msMenu li a,
+#mac #jpWrap #header #msMenu li a,
+#techno #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_rd.gif?201909031500);
+}
+
+/* silver */
+#web #jpWrap #header #secondMenu,
+#webTT #jpWrap #header #secondMenu,
+#web #jpWrap #header #msMenu,
+#webTT #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_web.gif?201909031500);
+}
+#web #jpWrap #header #secondMenu li a,
+#webTT #jpWrap #header #secondMenu li a,
+#web #jpWrap #header #msMenu li a,
+#webTT #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_web.gif?201909031500);
+}
+
+/* sky blue */
+#money #jpWrap #header #secondMenu,
+#money #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_money.gif?201909031500);
+}
+#money #jpWrap #header #secondMenu li a,
+#money #jpWrap #header #msdMenu li a {
+	background-image: url(/img/0910/menu_second_money.gif?201909031500);
+}
+
+/* vivid green */
+#winMob #jpWrap #header #secondMenu,
+#winMob #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_sphone.gif?201909031500);
+}
+#winMob #jpWrap #header #secondMenu li a,
+#winMob #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_sphone.gif?201909031500);
+}
+
+/* full black */
+#pg #jpWrap #header #secondMenu ,
+#av #jpWrap #header #secondMenu,
+#pg #jpWrap #header #msMenu ,
+#av #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_bk.gif?201909031500);
+}
+#pg #jpWrap #header #secondMenu li a,
+#av #jpWrap #header #secondMenu li a,
+#pg #jpWrap #header #msMenu li a,
+#av #jpWrap #header #msMenu li a  {
+	background-image: url(/img/0910/menu_second_bk.gif?201909031500);
+}
+
+/* aqua blue */
+#cloud #jpWrap #header #secondMenu,
+#cloud #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_aqua.gif?201909031500);
+}
+#cloud #jpWrap #header #secondMenu li a,
+#cloud #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_aqua.gif?201909031500);
+}
+
+/* vivid red */
+#nenga #jpWrap #header #secondMenu,
+#nenga #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_nenga.gif?201909031500);
+}
+#nenga #jpWrap #header #secondMenu li a,
+#nenga #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_nenga.gif?201909031500);
+}
+
+/* vivid red2 20130401 */
+#cloud2 #jpWrap #header #secondMenu,
+#cloud2 #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_cloud2.gif?201909031500);
+}
+#cloud2 #jpWrap #header #secondMenu li a,
+#cloud2 #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_cloud2.gif?201909031500);
+}
+
+/* darkgreen 20110124~ */
+#it #jpWrap #header #secondMenu,
+#it #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_tech.gif?201909031500);
+}
+#it #jpWrap #header #secondMenu li a,
+#it #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_tech.gif?201909031500);
+}
+
+/* darkgray */
+#robotics #jpWrap #header #secondMenu,
+#fossil #jpWrap #header #secondMenu,
+#clubinfo #jpWrap #header #secondMenu,
+#jaws #jpWrap #header #secondMenu,
+#kintone #jpWrap #header #secondMenu,
+#aperza #jpWrap #header #secondMenu,
+#moverio #jpWrap #header #secondMenu,
+#dydo #jpWrap #header #secondMenu,
+#aurasync #jpWrap #header #secondMenu,
+#robotpay #jpWrap #header #secondMenu,
+#leaders #jpWrap #header #secondMenu,
+#cashless #jpWrap #header #secondMenu,
+#robotics #jpWrap #header #msMenu,
+#fossil #jpWrap #header #msMenu,
+#clubinfo #jpWrap #header #msMenu,
+#jaws #jpWrap #header #msMenu,
+#kintone #jpWrap #header #msMenu,
+#aperza #jpWrap #header #msMenu,
+#moverio #jpWrap #header #msMenu,
+#dydo #jpWrap #header #msMenu,
+#aurasync #jpWrap #header #msMenu,
+#robotpay #jpWrap #header #msMenu,
+#leaders #jpWrap #header #msMenu,
+#cashless #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_dgy.gif?201909031500);
+}
+#robotics #jpWrap #header #secondMenu li a,
+#fossil #jpWrap #header #secondMenu li a,
+#clubinfo #jpWrap #header #secondMenu li a,
+#jaws #jpWrap #header #secondMenu li a,
+#kintone #jpWrap #header #secondMenu li a,
+#aperza #jpWrap #header #secondMenu li a,
+#moverio #jpWrap #header #secondMenu li a,
+#dydo #jpWrap #header #secondMenu li a,
+#aurasync #jpWrap #header #secondMenu li a,
+#robotpay #jpWrap #header #secondMenu li a,
+#leaders #jpWrap #header #secondMenu li a,
+#cashless #jpWrap #header #secondMenu li a,
+#robotics #jpWrap #header #msMenu li a,
+#fossil #jpWrap #header #msMenu li a,
+#clubinfo #jpWrap #header #msMenu li a,
+#jaws #jpWrap #header #msMenu li a,
+#kintone #jpWrap #header #msMenu li a,
+#aperza #jpWrap #header #msMenu li a,
+#moverio #jpWrap #header #msMenu li a,
+#dydo #jpWrap #header #msMenu li a,
+#aurasync #jpWrap #header #msMenu li a,
+#robotpay #jpWrap #header #msMenu li a,
+#leaders #jpWrap #header #msMenu li a,
+#cashless #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_dgy.gif?201909031500);
+}
+
+#gamingpc #jpWrap #header #secondMenu,
+#sphone #jpWrap #header #secondMenu,
+#sharp #jpWrap #header #secondMenu,
+#fujitsu #jpWrap #header #secondMenu,
+#wireless #jpWrap #header #secondMenu,
+#abo #jpWrap #header #secondMenu,
+#panaspot #jpWrap #header #secondMenu,
+#microsoft #jpWrap #header #secondMenu,
+#ituse #jpWrap #header #secondMenu,
+#epson #jpWrap #header #secondMenu,
+#ad #jpWrap #header #secondMenu,
+#gamingpc #jpWrap #header #msMenu,
+#sphone #jpWrap #header #msMenu,
+#sharp #jpWrap #header #msMenu,
+#fujitsu #jpWrap #header #msMenu,
+#wireless #jpWrap #header #msMenu,
+#abo #jpWrap #header #msMenu,
+#panaspot #jpWrap #header #msMenu,
+#microsoft #jpWrap #header #msMenu,
+#ituse #jpWrap #header #msMenu,
+#epson #jpWrap #header #msMenu,
+#ad #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_bl.gif?201909031500);
+}
+#gamingpc #jpWrap #header #secondMenu li a,
+#sphone #jpWrap #header #secondMenu li a,
+#sharp #jpWrap #header #secondMenu li a,
+#fujitsu #jpWrap #header #secondMenu li a,
+#wireless #jpWrap #header #secondMenu li a,
+#abo #jpWrap #header #secondMenu li a,
+#panaspot #jpWrap #header #secondMenu li a,
+#microsoft #jpWrap #header #secondMenu li a,
+#ituse #jpWrap #header #secondMenu li a,
+#epson #jpWrap #header #secondMenu li a,
+#ad #jpWrap #header #secondMenu li a,
+#gamingpc #jpWrap #header #msMenu li a,
+#sphone #jpWrap #header #msMenu li a,
+#sharp #jpWrap #header #msMenu li a,
+#fujitsu #jpWrap #header #msMenu li a,
+#wireless #jpWrap #header #msMenu li a,
+#abo #jpWrap #header #msMenu li a,
+#panaspot #jpWrap #header #msMenu li a,
+#microsoft #jpWrap #header #msMenu li a,
+#ituse #jpWrap #header #msMenu li a,
+#epson #jpWrap #header #msMenu li a,
+#ad #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_bl.gif?201909031500);
+}
+
+/* ELECOM */
+#elecom #jpWrap #header #secondMenu,
+#elecom #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_elecom.gif?201909031500) !important;
+}
+#elecom #jpWrap #header #secondMenu li a,
+#elecom #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_elecom.gif?201909031500) !important;
+}
+
+/* ascii cloud */
+#aCloud #jpWrap #header #secondMenu,
+#aCloud #jpWrap #header #msMenu {
+    background-image: url(/img/0910/bg_secondmenu_cloud2.gif?201909031500);
+}
+#aCloud #jpWrap #header #secondMenu li a,
+#aCloud #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_cloud2.gif?201909031500);
+}
+
+/* NEC Direct*/
+#nec #jpWrap #header #secondMenu, #nec #jpWrap #header #msMenu  			{ background-image: url(/img/0910/bg_secondmenu_bk.gif?201909031500);}
+#nec #jpWrap #header #secondMenu li a, #nec #jpWrap #header #msMenu li a		{ background-image: url(/img/0910/menu_second_bk.gif?201909031500);}
+
+/* SAO */
+#sao-su #jpWrap #header #secondMenu,
+#sao-su #jpWrap #header #msMenu,
+#kakuyomu #jpWrap #header #secondMenu,
+#kakuyomu #jpWrap #header #msMenu  {
+	background-image: url(/img/0910/bg_secondmenu_sao2.gif?201909031500);
+}
+#sao-su #jpWrap #header #secondMenu li a,
+#sao-su #jpWrap #header #msMenu li a,
+#kakuyomu #jpWrap #header #secondMenu li a,
+#kakuyomu #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_sao2.gif?201909031500);
+}
+/* 家電 */
+#kaden #jpWrap #header #secondMenu,
+#kaden #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_kaden.gif?201909031500);
+}
+#kaden #jpWrap #header #secondMenu li a,
+#kaden #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_kaden.gif?201909031500);
+}
+/* IoT */
+#iot #jpWrap #header #secondMenu,
+#iot #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_iot.gif?201909031500);
+}
+#iot #jpWrap #header #secondMenu li a,
+#iot #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_iot.gif?201909031500);
+}
+/* AI */
+#ai #jpWrap #header #secondMenu,
+#ai #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_ai.gif?201909031500);
+}
+#ai #jpWrap #header #secondMenu li a,
+#ai #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_ai.gif?201909031500);
+}
+/* Kids */
+#asciikids #jpWrap #header #secondMenu,
+#asciikids #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_kids.gif?201909031500);
+}
+#asciikids #jpWrap #header #secondMenu li a,
+#asciikids #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_kids.gif?201909031500);
+}
+/* Sports Business */
+#sports #jpWrap #header #secondMenu,
+#sports #jpWrap #header #msMenu {
+	background-image: url(/img/0910/bg_secondmenu_sports.gif?20170425);
+}
+#sports #jpWrap #header #secondMenu li a,
+#sports #jpWrap #header #msMenu li a {
+	background-image: url(/img/0910/menu_second_sports.gif?20170425);
+}
